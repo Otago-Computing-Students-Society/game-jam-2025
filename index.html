@@ -21,6 +21,7 @@
 
     <link href="/css/main.min.css" rel="stylesheet">
     <link href="/css/custom.css" rel="stylesheet">
+    <link href="/css/submissions.css" rel="stylesheet">
 
     <link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
     <link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
@@ -48,7 +49,7 @@
 </head>
 
 
-<body>
+<body class="preload">
     <div class="container">
         <header class="header">
             <span class="header__inner">
@@ -92,28 +93,32 @@
 
         <div class="content">
             <main class="posts">
-                <h1>Events</h1>
+                <h1>2025 Game Jam Submissions</h1>
+
+                <div class="content">
+                    <p>Below are the wonderful entries for our 2025 Game Jam, which took placed on the weekend of 25-27 July.</p>
+                    <p>A massive thank you to <strong><a href="https://www.deepfield.games" target="_blank">Deep Field Games</a></strong>
+                        for generously sponsoring this event!</p>
+                </div>
 
 
                 <div class="content">
-                    <p><img alt="megazone" data-cms-original-src="/images/megazone2.jpg"
-                            src="/images/megazone2.jpg?_cchid=fc8fbfe192c054d0b883ca7495f0cff6"></p>
-                    <h2 id="game-jam">Game Jam</h2>
-                    <p>Are you interested in game development? You're in luck, because we're organising a game jam for
-                        the 26th and 27th of July! This is a free event and is open to everyone in Dunedin; students and
-                        non-students, and even absolute beginners. <strong>The winning team will receive $250 in Steam
-                            vouchers</strong>, plus we'll have a few smaller prizes and catered lunches, thanks to the
-                        generous sponsorship of <strong><a href="https://www.deepfield.games">Deep Field
-                                Games</a></strong>!</p>
-                    <p><strong>You can sign up for the event <a href="/jam">here</a>.</strong></p>
-                    <p>We want to encourage programmers, designers, artists, world-builders and everyone else interested
-                        in game development to participate! All skill levels are welcome (even absolute beginners), and
-                        don't worry if you don't know any other participants - you'll have an opportunity to form teams
-                        at the start of the event :)</p>
-                    <p>We'll have some technical workshops in the 1-2 weeks before the jam. The event itself will begin
-                        the evening of Friday the 25th of July with the release of the theme, team formation, and
-                        beginning work on the games. You'll have all of the 26th and 27th to develop the games, and then
-                        at 11.59 PM, it's “pencils down” for voting.</p>
+                    <div class="project-container">
+                        <div>
+                            <h2>Emscripten Submission Test</h2>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab enim mollitia reprehenderit illo! Amet ipsa, at praesentium necessitatibus quia alias eaque velit soluta libero ullam nam, nemo blanditiis eos quis!
+                            </p>
+                        </div>
+                        <div class="content-frame pointer" id="submission-1">
+                            <img class="submission-contents" src="./submissions/s1/little-engine.png">
+                            <canvas class="submission-contents" id="canvas" oncontextmenu="event.preventDefault()" tabindex=-1></canvas>
+                            <div class="overlay">
+                                <div class="spinner invisible"></div>
+                                <p class="overlay-text invisible">Click to load</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="pagination">
@@ -217,7 +222,8 @@
             </div>
         </footer>
     </div>
-    <script data-cms-original-src="js/bundle.min.js" type="text/javascript"></script>
+    <script src="js/bundle.min.js" type="text/javascript"></script>
+    <script src="js/app.js" type="text/javascript"></script>
 </body>
 
 </html>
