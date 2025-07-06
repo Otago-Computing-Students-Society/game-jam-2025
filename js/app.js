@@ -4,6 +4,7 @@ setTimeout(() => document.body.classList.remove('preload'), 100);
 
 setupEmscriptenFrame(document.getElementById("submission-1"), '../submissions/s1', 'little-engine.js');
 setupUnityFrame(document.getElementById("submission-2"), "../submissions/s2");
+setupGodotFrame(document.getElementById("submission-3"), "../submissions/s3/godot.html");
 
 
 function setupUnityFrame(frame, folder, useUnityWebExtension = false) {
@@ -35,6 +36,39 @@ function instantiateUnity(frame, folder, useUnityWebExtension) {
         cleanup: () => overlay.remove(),
         useUnityWebExtension: useUnityWebExtension
     };
+}
+
+function setupGodotFrame(frame, htmlPageLoc) {
+    frame.onmouseover = () => showOverlay(frame);
+    frame.onmouseout = () => hideOverlay(frame);
+    frame.onclick = () => instantiateGodot(frame, htmlPageLoc);
+
+    frame.offsetHeight = (frame.offsetWidth * 9 / 16) + "px";
+}
+
+function instantiateGodot(frame, htmlPageLoc) {
+    frame.onmouseover = null;
+    frame.onmouseout = null;
+    frame.onclick = null;
+
+    frame.querySelector(".overlay-text").classList.add("invisible");
+    frame.querySelector(".spinner").classList.remove("invisible");
+    var overlay = frame.querySelector(".overlay");
+
+    var child = document.createElement('iframe');
+    child.src = htmlPageLoc;
+    child.classList.add("submission-contents");
+    
+    frame.appendChild(child);
+    
+    child.contentWindow.loadData = {
+        parent: frame,
+        cleanup: () => overlay.remove()
+    };
+
+    var script = document.createElement("script");
+    script.src = "js/godot-frame-cleanup.js";
+    child.appendChild(script);
 }
 
 function setupEmscriptenFrame(frame, folder, file) {
