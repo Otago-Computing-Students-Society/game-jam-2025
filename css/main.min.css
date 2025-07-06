@@ -1,0 +1,4233 @@
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background: #212020
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #dcdcdc
+}
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    margin: 0
+}
+
+main {
+    display: block
+}
+
+h1 {
+    font-size: 2em;
+    margin: .67em 0
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible
+}
+
+pre {
+    font-family: monospace,monospace;
+    font-display: auto;
+    font-size: 1em
+}
+
+a {
+    background-color: transparent
+}
+
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted
+}
+
+b,strong {
+    font-weight: bolder
+}
+
+code,kbd,samp {
+    font-family: monospace,monospace;
+    font-display: auto;
+    font-size: 1em
+}
+
+small {
+    font-size: 80%
+}
+
+sub,sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+sub {
+    bottom: -.25em
+}
+
+sup {
+    top: -.5em
+}
+
+img {
+    border-style: none
+}
+
+button,input,optgroup,select,textarea {
+    font-family: inherit;
+    font-display: auto;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0
+}
+
+button,input {
+    overflow: visible
+}
+
+button,select {
+    text-transform: none
+}
+
+button,[type=button],[type=reset],[type=submit] {
+    -webkit-appearance: button
+}
+
+button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner {
+    border-style: none;
+    padding: 0
+}
+
+button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring {
+    outline: 1px dotted ButtonText
+}
+
+fieldset {
+    padding: .35em .75em .625em
+}
+
+legend {
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal
+}
+
+progress {
+    vertical-align: baseline
+}
+
+textarea {
+    overflow: auto
+}
+
+[type=checkbox],[type=radio] {
+    box-sizing: border-box;
+    padding: 0
+}
+
+[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button {
+    height: auto
+}
+
+[type=search] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px
+}
+
+[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit
+}
+
+details {
+    display: block
+}
+
+summary {
+    display: list-item
+}
+
+template {
+    display: none
+}
+
+[hidden] {
+    display: none
+}
+
+code[class*=language-],pre[class*=language-] {
+    color: #fff;
+    background: 0 0;
+    font-family: Consolas,Monaco,andale mono,ubuntu mono,monospace;
+    font-size: 1em;
+    text-align: left;
+    text-shadow: 0 -.1em .2em #000;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none
+}
+
+pre[class*=language-],:not(pre)>code[class*=language-] {
+    background: #141414
+}
+
+pre[class*=language-] {
+    border-radius: .5em;
+    border: .3em solid #545454;
+    box-shadow: 1px 1px .5em black inset;
+    margin: .5em 0;
+    overflow: auto;
+    padding: 1em
+}
+
+pre[class*=language-]::-moz-selection {
+    background: #27292a
+}
+
+pre[class*=language-]::selection {
+    background: #27292a
+}
+
+pre[class*=language-]::-moz-selection,pre[class*=language-] ::-moz-selection,code[class*=language-]::-moz-selection,code[class*=language-] ::-moz-selection {
+    text-shadow: none;
+    background: rgba(237,237,237,.15)
+}
+
+pre[class*=language-]::selection,pre[class*=language-] ::selection,code[class*=language-]::selection,code[class*=language-] ::selection {
+    text-shadow: none;
+    background: rgba(237,237,237,.15)
+}
+
+:not(pre)>code[class*=language-] {
+    border-radius: .3em;
+    border: .13em solid #545454;
+    box-shadow: 1px 1px .3em -.1em black inset;
+    padding: .15em .2em .05em;
+    white-space: normal
+}
+
+.token.comment,.token.prolog,.token.doctype,.token.cdata {
+    color: #787878
+}
+
+.token.punctuation {
+    opacity: .7
+}
+
+.token.namespace {
+    opacity: .7
+}
+
+.token.tag,.token.boolean,.token.number,.token.deleted {
+    color: #cf694a
+}
+
+.token.keyword,.token.property,.token.selector,.token.constant,.token.symbol,.token.builtin {
+    color: #f9ee9a
+}
+
+.token.attr-name,.token.attr-value,.token.string,.token.char,.token.operator,.token.entity,.token.url,.language-css .token.string,.style .token.string,.token.variable,.token.inserted {
+    color: #919e6b
+}
+
+.token.atrule {
+    color: #7386a5
+}
+
+.token.regex,.token.important {
+    color: #e9c163
+}
+
+.token.important,.token.bold {
+    font-weight: 700
+}
+
+.token.italic {
+    font-style: italic
+}
+
+.token.entity {
+    cursor: help
+}
+
+pre[data-line] {
+    padding: 1em 0 1em 3em;
+    position: relative
+}
+
+.language-markup .token.tag,.language-markup .token.attr-name,.language-markup .token.punctuation {
+    color: #ad895c
+}
+
+.token {
+    position: relative;
+    z-index: 1
+}
+
+.line-highlight {
+    background: rgba(84,84,84,.25);
+    background: linear-gradient(to right,rgba(84,84,84,.1) 70%,rgba(84,84,84,0));
+    border-bottom: 1px dashed #545454;
+    border-top: 1px dashed #545454;
+    left: 0;
+    line-height: inherit;
+    margin-top: .75em;
+    padding: inherit 0;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    white-space: pre;
+    z-index: 0
+}
+
+.line-highlight:before,.line-highlight[data-end]:after {
+    background-color: #8794a6;
+    border-radius: 999px;
+    box-shadow: 0 1px white;
+    color: #f5f2f0;
+    content: attr(data-start);
+    font: 700 65%/1.5 sans-serif;
+    left: .6em;
+    min-width: 1em;
+    padding: 0 .5em;
+    position: absolute;
+    text-align: center;
+    text-shadow: none;
+    top: .4em;
+    vertical-align: .3em
+}
+
+.line-highlight[data-end]:after {
+    bottom: .4em;
+    content: attr(data-end);
+    top: auto
+}
+
+pre[data-line] {
+    position: relative;
+    padding: 1em 0 1em 3em
+}
+
+.line-highlight {
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding: inherit 0;
+    margin-top: 1em;
+    background: rgba(153,122,102,8%);
+    background: linear-gradient(to right,rgba(153,122,102,.1) 70%,rgba(153,122,102,0));
+    pointer-events: none;
+    line-height: inherit;
+    white-space: pre
+}
+
+@media print {
+    .line-highlight {
+        -webkit-print-color-adjust: exact;
+        color-adjust: exact
+    }
+}
+
+.line-highlight:before,.line-highlight[data-end]:after {
+    content: attr(data-start);
+    position: absolute;
+    top: .4em;
+    left: .6em;
+    min-width: 1em;
+    padding: 0 .5em;
+    background-color: rgba(153,122,102,.4);
+    color: #f5f2f0;
+    font: 700 65%/1.5 sans-serif;
+    text-align: center;
+    vertical-align: .3em;
+    border-radius: 999px;
+    text-shadow: none;
+    box-shadow: 0 1px white
+}
+
+.line-highlight[data-end]:after {
+    content: attr(data-end);
+    top: auto;
+    bottom: .4em
+}
+
+.line-numbers .line-highlight:before,.line-numbers .line-highlight:after {
+    content: none
+}
+
+pre[id].linkable-line-numbers span.line-numbers-rows {
+    pointer-events: all
+}
+
+pre[id].linkable-line-numbers span.line-numbers-rows>span:before {
+    cursor: pointer
+}
+
+pre[id].linkable-line-numbers span.line-numbers-rows>span:hover:before {
+    background-color: rgba(128,128,128,.2)
+}
+
+pre[class*=language-].line-numbers {
+    position: relative;
+    padding-left: 3.8em;
+    counter-reset: linenumber
+}
+
+pre[class*=language-].line-numbers>code {
+    position: relative;
+    white-space: inherit
+}
+
+.line-numbers .line-numbers-rows {
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    font-size: 100%;
+    left: -3.8em;
+    width: 3em;
+    letter-spacing: -1px;
+    border-right: 1px solid #999;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.line-numbers-rows>span {
+    display: block;
+    counter-increment: linenumber
+}
+
+.line-numbers-rows>span:before {
+    content: counter(linenumber);
+    color: #999;
+    display: block;
+    padding-right: .8em;
+    text-align: right
+}
+
+div.code-toolbar {
+    position: relative
+}
+
+div.code-toolbar>.toolbar {
+    position: absolute;
+    top: .3em;
+    right: .2em;
+    transition: opacity .3s ease-in-out;
+    opacity: 0
+}
+
+div.code-toolbar:hover>.toolbar {
+    opacity: 1
+}
+
+div.code-toolbar:focus-within>.toolbar {
+    opacity: 1
+}
+
+div.code-toolbar>.toolbar .toolbar-item {
+    display: inline-block
+}
+
+div.code-toolbar>.toolbar a {
+    cursor: pointer
+}
+
+div.code-toolbar>.toolbar button {
+    background: 0 0;
+    border: 0;
+    color: inherit;
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none
+}
+
+div.code-toolbar>.toolbar a,div.code-toolbar>.toolbar button,div.code-toolbar>.toolbar span {
+    color: #bbb;
+    font-size: .8em;
+    padding: 0 .5em;
+    background: #f5f2f0;
+    background: rgba(224,224,224,.2);
+    box-shadow: 0 2px rgba(0,0,0,.2);
+    border-radius: .5em
+}
+
+div.code-toolbar>.toolbar a:hover,div.code-toolbar>.toolbar a:focus,div.code-toolbar>.toolbar button:hover,div.code-toolbar>.toolbar button:focus,div.code-toolbar>.toolbar span:hover,div.code-toolbar>.toolbar span:focus {
+    color: inherit;
+    text-decoration: none
+}
+
+.fib {
+    background-size: contain;
+    background-position: 50%;
+    background-repeat: no-repeat
+}
+
+.fi {
+    background-size: contain;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    position: relative;
+    display: inline-block;
+    width: 1.33333333em;
+    line-height: 1em
+}
+
+.fi:before {
+    content: '\00a0'
+}
+
+.fi.fis {
+    width: 1em
+}
+
+.fi-xx {
+    background-image: url('/flags/4x3/xx.svg?_cchid=4f0521d49f071018959ad7869a72cf22')
+}
+
+.fi-xx.fis {
+    background-image: url('/flags/1x1/xx.svg?_cchid=54c36dde988af3d9aa5d27f8200a68f3')
+}
+
+.fi-ad {
+    background-image: url('/flags/4x3/ad.svg?_cchid=8c821c9a108a35aa6bb0935e6cb2d131')
+}
+
+.fi-ad.fis {
+    background-image: url('/flags/1x1/ad.svg?_cchid=b2946bd89485be3b8b641a5385634bb3')
+}
+
+.fi-ae {
+    background-image: url('/flags/4x3/ae.svg?_cchid=42d71570eaa84e61032f934cc8296e79')
+}
+
+.fi-ae.fis {
+    background-image: url('/flags/1x1/ae.svg?_cchid=b62c8ca639b1bdb3bafc60d1d26d54da')
+}
+
+.fi-af {
+    background-image: url('/flags/4x3/af.svg?_cchid=80deffc567027c82fc0dd8136826da5d')
+}
+
+.fi-af.fis {
+    background-image: url('/flags/1x1/af.svg?_cchid=7773ac255fbd01c79357cc2eded69ee5')
+}
+
+.fi-ag {
+    background-image: url('/flags/4x3/ag.svg?_cchid=3a792a3b486615ac777e84f5570e15d5')
+}
+
+.fi-ag.fis {
+    background-image: url('/flags/1x1/ag.svg?_cchid=ee2fc23eea687b5cd0ab1ad10e03eb95')
+}
+
+.fi-ai {
+    background-image: url('/flags/4x3/ai.svg?_cchid=61c09b79f9b83dca2e696b364721df05')
+}
+
+.fi-ai.fis {
+    background-image: url('/flags/1x1/ai.svg?_cchid=68783b8780359c6495459aaeb6fa1775')
+}
+
+.fi-al {
+    background-image: url('/flags/4x3/al.svg?_cchid=eab38620e9f9fa06a9325f9551352f94')
+}
+
+.fi-al.fis {
+    background-image: url('/flags/1x1/al.svg?_cchid=acc618f3b6fa9aaa84aebfe6e30647f0')
+}
+
+.fi-am {
+    background-image: url('/flags/4x3/am.svg?_cchid=39c5d05ed3ce2660746bf8ea995af707')
+}
+
+.fi-am.fis {
+    background-image: url('/flags/1x1/am.svg?_cchid=8a063b9e5908a3f0dd57b5aa4deeb852')
+}
+
+.fi-ao {
+    background-image: url('/flags/4x3/ao.svg?_cchid=52753def72744f8ce26c003e58ac89ae')
+}
+
+.fi-ao.fis {
+    background-image: url('/flags/1x1/ao.svg?_cchid=11f61ca564da05361edd3dc9b4b6dfa6')
+}
+
+.fi-aq {
+    background-image: url('/flags/4x3/aq.svg?_cchid=d96624823ceaf3950ba1b197e1f0b99c')
+}
+
+.fi-aq.fis {
+    background-image: url('/flags/1x1/aq.svg?_cchid=6f1f242caf2cdd5c64cc9577d78e7de9')
+}
+
+.fi-ar {
+    background-image: url('/flags/4x3/ar.svg?_cchid=f150864294964a34430648efbd001982')
+}
+
+.fi-ar.fis {
+    background-image: url('/flags/1x1/ar.svg?_cchid=5b5b4c08180a25a39ae8c8cbcb35c08f')
+}
+
+.fi-as {
+    background-image: url('/flags/4x3/as.svg?_cchid=bbe697d2ff84b5329096b2ecfaffc03e')
+}
+
+.fi-as.fis {
+    background-image: url('/flags/1x1/as.svg?_cchid=480b9e78b3b7fd1852e4dc1e818b3d87')
+}
+
+.fi-at {
+    background-image: url('/flags/4x3/at.svg?_cchid=8dc68995ec419a9440a25fadc2d8193d')
+}
+
+.fi-at.fis {
+    background-image: url('/flags/1x1/at.svg?_cchid=27ec5a7f28c5d0c8f02181d2ab888958')
+}
+
+.fi-au {
+    background-image: url('/flags/4x3/au.svg?_cchid=0af6624d4b0ca5e2348e094d3fe0a4bb')
+}
+
+.fi-au.fis {
+    background-image: url('/flags/1x1/au.svg?_cchid=f3c973867c6c71ea1429e1c7bcab6fd6')
+}
+
+.fi-aw {
+    background-image: url('/flags/4x3/aw.svg?_cchid=d185aaf097d246bf0124d0cef514b44b')
+}
+
+.fi-aw.fis {
+    background-image: url('/flags/1x1/aw.svg?_cchid=2f7fecc27def310bdafd500207aaf928')
+}
+
+.fi-ax {
+    background-image: url('/flags/4x3/ax.svg?_cchid=eebce886890fef7a727b1caffdf13d01')
+}
+
+.fi-ax.fis {
+    background-image: url('/flags/1x1/ax.svg?_cchid=2258d209e0b80a9dfc5ccb61bab3128c')
+}
+
+.fi-az {
+    background-image: url('/flags/4x3/az.svg?_cchid=403e9b3f84602663476f4139b92916ea')
+}
+
+.fi-az.fis {
+    background-image: url('/flags/1x1/az.svg?_cchid=ee61daa1fd7aee4386a54db3b709160c')
+}
+
+.fi-ba {
+    background-image: url('/flags/4x3/ba.svg?_cchid=d1e412e924a8140b88bff6e3987be045')
+}
+
+.fi-ba.fis {
+    background-image: url('/flags/1x1/ba.svg?_cchid=085dd43f78749dae509f2e68ca6faa5a')
+}
+
+.fi-bb {
+    background-image: url('/flags/4x3/bb.svg?_cchid=89161f1489c1c83b696a8cd72af75f36')
+}
+
+.fi-bb.fis {
+    background-image: url('/flags/1x1/bb.svg?_cchid=6eab019ed6c780cf87567124b794870c')
+}
+
+.fi-bd {
+    background-image: url('/flags/4x3/bd.svg?_cchid=e99cb11fdae12d94bce83d228b052dc3')
+}
+
+.fi-bd.fis {
+    background-image: url('/flags/1x1/bd.svg?_cchid=9a6cf43247bf4c3024eabccb5c3e6e30')
+}
+
+.fi-be {
+    background-image: url('/flags/4x3/be.svg?_cchid=6cac03795313d7c043bbdd4d27c08494')
+}
+
+.fi-be.fis {
+    background-image: url('/flags/1x1/be.svg?_cchid=6fc013c9d1007c352313f021a700bb66')
+}
+
+.fi-bf {
+    background-image: url('/flags/4x3/bf.svg?_cchid=4755cc0eeffc214e72703111d483703f')
+}
+
+.fi-bf.fis {
+    background-image: url('/flags/1x1/bf.svg?_cchid=7194e2401226188f053b48d5d41ba00d')
+}
+
+.fi-bg {
+    background-image: url('/flags/4x3/bg.svg?_cchid=5a32d80ff45984bc53108bc3138df0e7')
+}
+
+.fi-bg.fis {
+    background-image: url('/flags/1x1/bg.svg?_cchid=47c70d31371646e7e1823e56d769c283')
+}
+
+.fi-bh {
+    background-image: url('/flags/4x3/bh.svg?_cchid=86725006a063c2db6d6b0ae08d2a2ae5')
+}
+
+.fi-bh.fis {
+    background-image: url('/flags/1x1/bh.svg?_cchid=ee0ac09528486a658d0d2ec5c6d90ba1')
+}
+
+.fi-bi {
+    background-image: url('/flags/4x3/bi.svg?_cchid=7e980569f3f75f08045ad3f87094a1c6')
+}
+
+.fi-bi.fis {
+    background-image: url('/flags/1x1/bi.svg?_cchid=5f5997b23adff9175e019759eb9de05a')
+}
+
+.fi-bj {
+    background-image: url('/flags/4x3/bj.svg?_cchid=835db4368d01c102146ea2e23b0ee45e')
+}
+
+.fi-bj.fis {
+    background-image: url('/flags/1x1/bj.svg?_cchid=b54bfa6fee4e3fa9f7da2f082952319c')
+}
+
+.fi-bl {
+    background-image: url('/flags/4x3/bl.svg?_cchid=1359039ac6468ef0d4bcdb6ca17a44a6')
+}
+
+.fi-bl.fis {
+    background-image: url('/flags/1x1/bl.svg?_cchid=8028dd1166b77764314e7494f6818469')
+}
+
+.fi-bm {
+    background-image: url('/flags/4x3/bm.svg?_cchid=21debc2e785ee90e5cb17e4d1e51c2ef')
+}
+
+.fi-bm.fis {
+    background-image: url('/flags/1x1/bm.svg?_cchid=cee8f686b0b77d25756f5efe59d4b31b')
+}
+
+.fi-bn {
+    background-image: url('/flags/4x3/bn.svg?_cchid=d5a2d91852038fab108963ea00f36712')
+}
+
+.fi-bn.fis {
+    background-image: url('/flags/1x1/bn.svg?_cchid=62e7e8c1e3668e7e8a3dfd82ab2d9233')
+}
+
+.fi-bo {
+    background-image: url('/flags/4x3/bo.svg?_cchid=b1232fed4a8a6f174e8e7fd6b168c4ec')
+}
+
+.fi-bo.fis {
+    background-image: url('/flags/1x1/bo.svg?_cchid=12b86d07050ceee461eb0a600809a1ba')
+}
+
+.fi-bq {
+    background-image: url('/flags/4x3/bq.svg?_cchid=63fa6eef889e055a5af0496cf8c8adfe')
+}
+
+.fi-bq.fis {
+    background-image: url('/flags/1x1/bq.svg?_cchid=a217e580785f179ca8c65e849cc7fce6')
+}
+
+.fi-br {
+    background-image: url('/flags/4x3/br.svg?_cchid=155348d0d5ca941fc05473797fa203b8')
+}
+
+.fi-br.fis {
+    background-image: url('/flags/1x1/br.svg?_cchid=8bcede6133e8c04278c5ba83caa509f6')
+}
+
+.fi-bs {
+    background-image: url('/flags/4x3/bs.svg?_cchid=3d1823e1342d7ef6bd01cc5eed9ceefa')
+}
+
+.fi-bs.fis {
+    background-image: url('/flags/1x1/bs.svg?_cchid=bfac09a90f7fb23e238ce04682d6a9fb')
+}
+
+.fi-bt {
+    background-image: url('/flags/4x3/bt.svg?_cchid=d35b5dd296478dbb051851d853a280f0')
+}
+
+.fi-bt.fis {
+    background-image: url('/flags/1x1/bt.svg?_cchid=552a870b8d0ff0782265b123c624e830')
+}
+
+.fi-bv {
+    background-image: url('/flags/4x3/bv.svg?_cchid=63455590e52a86229a2bfb6111567006')
+}
+
+.fi-bv.fis {
+    background-image: url('/flags/1x1/bv.svg?_cchid=f28cd0dcc9f4e07746c6347efcd2e993')
+}
+
+.fi-bw {
+    background-image: url('/flags/4x3/bw.svg?_cchid=8b493920bf8c0e60ff203403e668c73f')
+}
+
+.fi-bw.fis {
+    background-image: url('/flags/1x1/bw.svg?_cchid=fee2051bfe7a4082ee62282641d7e27d')
+}
+
+.fi-by {
+    background-image: url('/flags/4x3/by.svg?_cchid=417d52d05c31f5ee2cdd9ad4a0dac3f4')
+}
+
+.fi-by.fis {
+    background-image: url('/flags/1x1/by.svg?_cchid=9b3f33a1e4b930c1cebc596edc0a22aa')
+}
+
+.fi-bz {
+    background-image: url('/flags/4x3/bz.svg?_cchid=10078a026b33398e760e021504be9b31')
+}
+
+.fi-bz.fis {
+    background-image: url('/flags/1x1/bz.svg?_cchid=49323c5b9a440ff75d26b90859919a8e')
+}
+
+.fi-ca {
+    background-image: url('/flags/4x3/ca.svg?_cchid=f3277db42e8a0498c5f23b58c4d681fe')
+}
+
+.fi-ca.fis {
+    background-image: url('/flags/1x1/ca.svg?_cchid=4f67be07db374b31b5fea5902e540895')
+}
+
+.fi-cc {
+    background-image: url('/flags/4x3/cc.svg?_cchid=78a55c27fdfb24bb8e8844add13d0db4')
+}
+
+.fi-cc.fis {
+    background-image: url('/flags/1x1/cc.svg?_cchid=91b7acfa4a5ebcf4be28ac8c9069c631')
+}
+
+.fi-cd {
+    background-image: url('/flags/4x3/cd.svg?_cchid=4346647bc68ddba26c8a09980a380d8a')
+}
+
+.fi-cd.fis {
+    background-image: url('/flags/1x1/cd.svg?_cchid=478a48315a66a4da207cf9f9c1259728')
+}
+
+.fi-cf {
+    background-image: url('/flags/4x3/cf.svg?_cchid=f5e33c7fc3c3b9af45630f25146a7ae8')
+}
+
+.fi-cf.fis {
+    background-image: url('/flags/1x1/cf.svg?_cchid=cfda45522918ac0747b75ff0833bcd6d')
+}
+
+.fi-cg {
+    background-image: url('/flags/4x3/cg.svg?_cchid=994a4cc795f60e6f07b55cd314557585')
+}
+
+.fi-cg.fis {
+    background-image: url('/flags/1x1/cg.svg?_cchid=bc099729f80807c6d951c5580729e059')
+}
+
+.fi-ch {
+    background-image: url('/flags/4x3/ch.svg?_cchid=269ddab4d19b9c60a6459c09ddfd48c9')
+}
+
+.fi-ch.fis {
+    background-image: url('/flags/1x1/ch.svg?_cchid=9f295dfce66ba565655e91d247284005')
+}
+
+.fi-ci {
+    background-image: url('/flags/4x3/ci.svg?_cchid=71b3f6b842edddfcbd0c964f6c45d7f1')
+}
+
+.fi-ci.fis {
+    background-image: url('/flags/1x1/ci.svg?_cchid=4914b40504850ce7fa40aa544f981d3e')
+}
+
+.fi-ck {
+    background-image: url('/flags/4x3/ck.svg?_cchid=ae3ea163a41e7acc6ec68d293ee62911')
+}
+
+.fi-ck.fis {
+    background-image: url('/flags/1x1/ck.svg?_cchid=99108f218aba644d1f6d0d50c3380fa6')
+}
+
+.fi-cl {
+    background-image: url('/flags/4x3/cl.svg?_cchid=b51cf61c9b17b8810a5c65473a95d148')
+}
+
+.fi-cl.fis {
+    background-image: url('/flags/1x1/cl.svg?_cchid=b9243f782c03516b56bb4ceccfc8dde2')
+}
+
+.fi-cm {
+    background-image: url('/flags/4x3/cm.svg?_cchid=b2723805bb88df273f2a96d5f863ae31')
+}
+
+.fi-cm.fis {
+    background-image: url('/flags/1x1/cm.svg?_cchid=3e2c5b4b4df72b7cc38e8dc8f0313a80')
+}
+
+.fi-cn {
+    background-image: url('/flags/4x3/cn.svg?_cchid=01b1e16506941b544ede62b2d65fdbad')
+}
+
+.fi-cn.fis {
+    background-image: url('/flags/1x1/cn.svg?_cchid=e2750956d173aa7761be9dba91ff5fa7')
+}
+
+.fi-co {
+    background-image: url('/flags/4x3/co.svg?_cchid=eefa6c2cd269ce7da90dc5ac0d78a48a')
+}
+
+.fi-co.fis {
+    background-image: url('/flags/1x1/co.svg?_cchid=2d27993064a890abf252036cf65d3319')
+}
+
+.fi-cr {
+    background-image: url('/flags/4x3/cr.svg?_cchid=8f9e3dcc8f47407f57dd2eca6721d415')
+}
+
+.fi-cr.fis {
+    background-image: url('/flags/1x1/cr.svg?_cchid=a7d3b3129756d3ff6d8d9e0e5fc07c7c')
+}
+
+.fi-cu {
+    background-image: url('/flags/4x3/cu.svg?_cchid=b9ca1bb2cebbd37db474002547cb6aa2')
+}
+
+.fi-cu.fis {
+    background-image: url('/flags/1x1/cu.svg?_cchid=92a2fd7153e2d4f0f33ed4d08ddbbbdf')
+}
+
+.fi-cv {
+    background-image: url('/flags/4x3/cv.svg?_cchid=ac9da5f869f05b7576df60224e8c50ff')
+}
+
+.fi-cv.fis {
+    background-image: url('/flags/1x1/cv.svg?_cchid=baa17c3909f9e842f983c5d17ee34df3')
+}
+
+.fi-cw {
+    background-image: url('/flags/4x3/cw.svg?_cchid=1775b44490e2c80bd7165885f1f78c4f')
+}
+
+.fi-cw.fis {
+    background-image: url('/flags/1x1/cw.svg?_cchid=426e408a29e161f1fd55729701017bac')
+}
+
+.fi-cx {
+    background-image: url('/flags/4x3/cx.svg?_cchid=bbaba316c3e9a6b27ed5d6cbd9f0512c')
+}
+
+.fi-cx.fis {
+    background-image: url('/flags/1x1/cx.svg?_cchid=2eee9616f9a7c0205b3734fe181e7bbd')
+}
+
+.fi-cy {
+    background-image: url('/flags/4x3/cy.svg?_cchid=b3ef7d784e6260167591594e5c61350f')
+}
+
+.fi-cy.fis {
+    background-image: url('/flags/1x1/cy.svg?_cchid=6d82b6c7404e2df14d2b07d2210e38ed')
+}
+
+.fi-cz {
+    background-image: url('/flags/4x3/cz.svg?_cchid=859f18a5acfd4e8d702a9b3d539dfd2d')
+}
+
+.fi-cz.fis {
+    background-image: url('/flags/1x1/cz.svg?_cchid=8ffb243fd5351444af894f75415fbf16')
+}
+
+.fi-de {
+    background-image: url('/flags/4x3/de.svg?_cchid=78feb91bfda2ddce6bcfdcbab050995b')
+}
+
+.fi-de.fis {
+    background-image: url('/flags/1x1/de.svg?_cchid=4e64ea42c3d10fdaba69ac91b1dcc8ff')
+}
+
+.fi-dj {
+    background-image: url('/flags/4x3/dj.svg?_cchid=4d65966c9685be8f751f08e25707067d')
+}
+
+.fi-dj.fis {
+    background-image: url('/flags/1x1/dj.svg?_cchid=766a6a4cdabf810b64b43fffdc81eff6')
+}
+
+.fi-dk {
+    background-image: url('/flags/4x3/dk.svg?_cchid=33bba71c12896b2df18901d98cf2b62c')
+}
+
+.fi-dk.fis {
+    background-image: url('/flags/1x1/dk.svg?_cchid=079b834714bed8a2a943d5985cd8140c')
+}
+
+.fi-dm {
+    background-image: url('/flags/4x3/dm.svg?_cchid=3de3461422d9c4e03e74c052e60207a3')
+}
+
+.fi-dm.fis {
+    background-image: url('/flags/1x1/dm.svg?_cchid=0c78650ea93ae43ed002ab7f22fe7707')
+}
+
+.fi-do {
+    background-image: url('/flags/4x3/do.svg?_cchid=8f88e3b6a94ef8291c19e38e4b865ceb')
+}
+
+.fi-do.fis {
+    background-image: url('/flags/1x1/do.svg?_cchid=8f64050f6514e26634c48a985c939d65')
+}
+
+.fi-dz {
+    background-image: url('/flags/4x3/dz.svg?_cchid=b37c4fcf5782f19c46c24f834a141bb1')
+}
+
+.fi-dz.fis {
+    background-image: url('/flags/1x1/dz.svg?_cchid=e8688062e43dbd51e6458acefd84d15f')
+}
+
+.fi-ec {
+    background-image: url('/flags/4x3/ec.svg?_cchid=d8b5c15adb4f81491e29980a0540b833')
+}
+
+.fi-ec.fis {
+    background-image: url('/flags/1x1/ec.svg?_cchid=89c7836755e3cafbec06fab5d4695631')
+}
+
+.fi-ee {
+    background-image: url('/flags/4x3/ee.svg?_cchid=aafa1c5af55d29680fe5e4fbd837e32d')
+}
+
+.fi-ee.fis {
+    background-image: url('/flags/1x1/ee.svg?_cchid=8966b41611a113d92c0933fc9a84ee4c')
+}
+
+.fi-eg {
+    background-image: url('/flags/4x3/eg.svg?_cchid=34cb0b1f6dcb54334a4b2581cc7b742a')
+}
+
+.fi-eg.fis {
+    background-image: url('/flags/1x1/eg.svg?_cchid=f9ab79747dcea3d14894591f6066e0c5')
+}
+
+.fi-eh {
+    background-image: url('/flags/4x3/eh.svg?_cchid=04684006247417cc69ec88383bd95732')
+}
+
+.fi-eh.fis {
+    background-image: url('/flags/1x1/eh.svg?_cchid=bd82f0480ceb87a2aebc997f1f93f742')
+}
+
+.fi-er {
+    background-image: url('/flags/4x3/er.svg?_cchid=075f7d29333fde30b467add6d99b87dc')
+}
+
+.fi-er.fis {
+    background-image: url('/flags/1x1/er.svg?_cchid=842e40d02770e6ee5cb12f480db70cec')
+}
+
+.fi-es {
+    background-image: url('/flags/4x3/es.svg?_cchid=91221aeba452aeb57c55826c70920835')
+}
+
+.fi-es.fis {
+    background-image: url('/flags/1x1/es.svg?_cchid=ebd9bcf21fb645e3f1ad336fdc4b9f88')
+}
+
+.fi-et {
+    background-image: url('/flags/4x3/et.svg?_cchid=183f3604f5512ca69d1705502961afcd')
+}
+
+.fi-et.fis {
+    background-image: url('/flags/1x1/et.svg?_cchid=3992cbbd67a0edc6f31c3dd3b2551526')
+}
+
+.fi-fi {
+    background-image: url('/flags/4x3/fi.svg?_cchid=0e5ef3f583daa1a415330bed83ce8c4a')
+}
+
+.fi-fi.fis {
+    background-image: url('/flags/1x1/fi.svg?_cchid=5b3833a61c8740336765c46c89c2a6f6')
+}
+
+.fi-fj {
+    background-image: url('/flags/4x3/fj.svg?_cchid=16e1816076d0cd120e7d35ba7538f445')
+}
+
+.fi-fj.fis {
+    background-image: url('/flags/1x1/fj.svg?_cchid=017e64ee8605bd5e12e9d5be7e0641e9')
+}
+
+.fi-fk {
+    background-image: url('/flags/4x3/fk.svg?_cchid=cf221ea3dffa5c692f519030d05b9496')
+}
+
+.fi-fk.fis {
+    background-image: url('/flags/1x1/fk.svg?_cchid=2d1942369df648d5f20a67a5a2299dbd')
+}
+
+.fi-fm {
+    background-image: url('/flags/4x3/fm.svg?_cchid=5748d380a2042c3500591e8c66f97b68')
+}
+
+.fi-fm.fis {
+    background-image: url('/flags/1x1/fm.svg?_cchid=18e0032c93392156d05a42f52a68afd4')
+}
+
+.fi-fo {
+    background-image: url('/flags/4x3/fo.svg?_cchid=561d8e5c419b22b68d35c8513e5dfb66')
+}
+
+.fi-fo.fis {
+    background-image: url('/flags/1x1/fo.svg?_cchid=a7dd71c387153db4de6015d6e9830475')
+}
+
+.fi-fr {
+    background-image: url('/flags/4x3/fr.svg?_cchid=1359039ac6468ef0d4bcdb6ca17a44a6')
+}
+
+.fi-fr.fis {
+    background-image: url('/flags/1x1/fr.svg?_cchid=53ca53f99d8f63d43f4e785b2fee0032')
+}
+
+.fi-ga {
+    background-image: url('/flags/4x3/ga.svg?_cchid=f64e29ed68d2165d3620d53978933bb6')
+}
+
+.fi-ga.fis {
+    background-image: url('/flags/1x1/ga.svg?_cchid=1aa26b2be2f1faf8c75476e95f09c453')
+}
+
+.fi-gb {
+    background-image: url('/flags/4x3/gb.svg?_cchid=fcfef6780b36bef537381474df9d0be9')
+}
+
+.fi-gb.fis {
+    background-image: url('/flags/1x1/gb.svg?_cchid=521ff9175692d87884eb69d15280dba1')
+}
+
+.fi-gd {
+    background-image: url('/flags/4x3/gd.svg?_cchid=67cf83598998b9e3e9776be75a7597e9')
+}
+
+.fi-gd.fis {
+    background-image: url('/flags/1x1/gd.svg?_cchid=5a9b5d94a8fe1ec81a88bfdaed835aec')
+}
+
+.fi-ge {
+    background-image: url('/flags/4x3/ge.svg?_cchid=63b0311486e63f08f53dffc38591a749')
+}
+
+.fi-ge.fis {
+    background-image: url('/flags/1x1/ge.svg?_cchid=e46de93c3deb6bfc4b94e9ecbc551d82')
+}
+
+.fi-gf {
+    background-image: url('/flags/4x3/gf.svg?_cchid=1359039ac6468ef0d4bcdb6ca17a44a6')
+}
+
+.fi-gf.fis {
+    background-image: url('/flags/1x1/gf.svg?_cchid=d3d7e77215f627a6c9bed65d56e8a73c')
+}
+
+.fi-gg {
+    background-image: url('/flags/4x3/gg.svg?_cchid=453d95c72cd4fdccd241b61a839603ff')
+}
+
+.fi-gg.fis {
+    background-image: url('/flags/1x1/gg.svg?_cchid=ec290fee1ce859b72f166dad33a283d1')
+}
+
+.fi-gh {
+    background-image: url('/flags/4x3/gh.svg?_cchid=b1a97938c1f961df78998f50cc3d542e')
+}
+
+.fi-gh.fis {
+    background-image: url('/flags/1x1/gh.svg?_cchid=9e338876783991ac58ef3d234d3d0ce9')
+}
+
+.fi-gi {
+    background-image: url('/flags/4x3/gi.svg?_cchid=944d9dbac1f49db41d054c780b1d8dbd')
+}
+
+.fi-gi.fis {
+    background-image: url('/flags/1x1/gi.svg?_cchid=0824d9dbfe7ac5aa9c7b24b93023292e')
+}
+
+.fi-gl {
+    background-image: url('/flags/4x3/gl.svg?_cchid=c6090a99ab0402116f4ab70719eb034a')
+}
+
+.fi-gl.fis {
+    background-image: url('/flags/1x1/gl.svg?_cchid=05073911834f849510d126c39b5e7e34')
+}
+
+.fi-gm {
+    background-image: url('/flags/4x3/gm.svg?_cchid=44e4c41658e277baffaea136ffeebc28')
+}
+
+.fi-gm.fis {
+    background-image: url('/flags/1x1/gm.svg?_cchid=301e054b9f8d6489cdbfa02c14fdd11b')
+}
+
+.fi-gn {
+    background-image: url('/flags/4x3/gn.svg?_cchid=f1d6c153def70087cff4f84c49ee2fb2')
+}
+
+.fi-gn.fis {
+    background-image: url('/flags/1x1/gn.svg?_cchid=b95b7a545b0fc81827a37a219024900b')
+}
+
+.fi-gp {
+    background-image: url('/flags/4x3/gp.svg?_cchid=1359039ac6468ef0d4bcdb6ca17a44a6')
+}
+
+.fi-gp.fis {
+    background-image: url('/flags/1x1/gp.svg?_cchid=d3d7e77215f627a6c9bed65d56e8a73c')
+}
+
+.fi-gq {
+    background-image: url('/flags/4x3/gq.svg?_cchid=52b4ac099f46be415847f63cde06289c')
+}
+
+.fi-gq.fis {
+    background-image: url('/flags/1x1/gq.svg?_cchid=e3876a883db8f2847459cc904e44f44c')
+}
+
+.fi-gr {
+    background-image: url('/flags/4x3/gr.svg?_cchid=71452bbd08d693543125cc15f5943637')
+}
+
+.fi-gr.fis {
+    background-image: url('/flags/1x1/gr.svg?_cchid=398239dd784ae5d4687d84ccbd54160e')
+}
+
+.fi-gs {
+    background-image: url('/flags/4x3/gs.svg?_cchid=e217176641908e21302f9430ec9c15f7')
+}
+
+.fi-gs.fis {
+    background-image: url('/flags/1x1/gs.svg?_cchid=311d5328812142ea93de2cd070fac97c')
+}
+
+.fi-gt {
+    background-image: url('/flags/4x3/gt.svg?_cchid=9e6c4331a81db6f16830e022daa9cd1a')
+}
+
+.fi-gt.fis {
+    background-image: url('/flags/1x1/gt.svg?_cchid=e1b132f7b15f32e043ffd67a0eda9e5d')
+}
+
+.fi-gu {
+    background-image: url('/flags/4x3/gu.svg?_cchid=3a19af9300cc67ff4a5dc7fe93b1d4e3')
+}
+
+.fi-gu.fis {
+    background-image: url('/flags/1x1/gu.svg?_cchid=928839cbe247335126fccbcd2815230a')
+}
+
+.fi-gw {
+    background-image: url('/flags/4x3/gw.svg?_cchid=6241752e14e4af2b1f8c1ea22688e668')
+}
+
+.fi-gw.fis {
+    background-image: url('/flags/1x1/gw.svg?_cchid=be7d9fe1902e4bcb7dd511930cdb7a64')
+}
+
+.fi-gy {
+    background-image: url('/flags/4x3/gy.svg?_cchid=6a64d2f47b268200557555ac4ffcd8dd')
+}
+
+.fi-gy.fis {
+    background-image: url('/flags/1x1/gy.svg?_cchid=c908281a23558922ef9d44ce49240372')
+}
+
+.fi-hk {
+    background-image: url('/flags/4x3/hk.svg?_cchid=05e199a69ebae349ac87e1758e8ea1d9')
+}
+
+.fi-hk.fis {
+    background-image: url('/flags/1x1/hk.svg?_cchid=cce47f3ef2aabfb0b77fada7cb98fb24')
+}
+
+.fi-hm {
+    background-image: url('/flags/4x3/hm.svg?_cchid=e49ba24a0e759a8d849c4c709adf7fb8')
+}
+
+.fi-hm.fis {
+    background-image: url('/flags/1x1/hm.svg?_cchid=3ac8ee676728e7138b7fef72c8a0ca86')
+}
+
+.fi-hn {
+    background-image: url('/flags/4x3/hn.svg?_cchid=e4953d7b732a30f97a13706fc34a9680')
+}
+
+.fi-hn.fis {
+    background-image: url('/flags/1x1/hn.svg?_cchid=a19cb41494cc8409d09f2447f8dd7e73')
+}
+
+.fi-hr {
+    background-image: url('/flags/4x3/hr.svg?_cchid=9b7fd1f4bbdbe44a159903d73ac3a7e1')
+}
+
+.fi-hr.fis {
+    background-image: url('/flags/1x1/hr.svg?_cchid=a7f61bab01800e41cf51756bedc0e9da')
+}
+
+.fi-ht {
+    background-image: url('/flags/4x3/ht.svg?_cchid=800c2d430e2fe1a803310060c5d56a27')
+}
+
+.fi-ht.fis {
+    background-image: url('/flags/1x1/ht.svg?_cchid=d2c21946524d38df018234c8bc96afc4')
+}
+
+.fi-hu {
+    background-image: url('/flags/4x3/hu.svg?_cchid=966f49336f7466efd6f8dbe19f9fc300')
+}
+
+.fi-hu.fis {
+    background-image: url('/flags/1x1/hu.svg?_cchid=ac606833cdcf0da0803709ac75c75036')
+}
+
+.fi-id {
+    background-image: url('/flags/4x3/id.svg?_cchid=f5aa812145ee85fa05e5f2b62bdf030e')
+}
+
+.fi-id.fis {
+    background-image: url('/flags/1x1/id.svg?_cchid=b966e5565c7ca5538622eafdcc091c45')
+}
+
+.fi-ie {
+    background-image: url('/flags/4x3/ie.svg?_cchid=1c12635a2932de4b8036779933a84d97')
+}
+
+.fi-ie.fis {
+    background-image: url('/flags/1x1/ie.svg?_cchid=110efbf8a9a95ec3384b8b45dc5bc607')
+}
+
+.fi-il {
+    background-image: url('/flags/4x3/il.svg?_cchid=b3e45cd77dbad1845e29574b8f882f8b')
+}
+
+.fi-il.fis {
+    background-image: url('/flags/1x1/il.svg?_cchid=34a06b2d0f74c070d921ffc022296f42')
+}
+
+.fi-im {
+    background-image: url('/flags/4x3/im.svg?_cchid=52522de43471ee9bbfcfe83c9ef9ab10')
+}
+
+.fi-im.fis {
+    background-image: url('/flags/1x1/im.svg?_cchid=ca8e886c047395d74bdc94139f812b90')
+}
+
+.fi-in {
+    background-image: url('/flags/4x3/in.svg?_cchid=fd8e911182680a39719929a06ae8658b')
+}
+
+.fi-in.fis {
+    background-image: url('/flags/1x1/in.svg?_cchid=7ff299bf914c980b81cf2bdac954f00c')
+}
+
+.fi-io {
+    background-image: url('/flags/4x3/io.svg?_cchid=664daaceb0c8c9aca381119c93214940')
+}
+
+.fi-io.fis {
+    background-image: url('/flags/1x1/io.svg?_cchid=30c9d811cc60abe9921ad318871bd795')
+}
+
+.fi-iq {
+    background-image: url('/flags/4x3/iq.svg?_cchid=77828901b08c8bde8d09bc969f6fe2bd')
+}
+
+.fi-iq.fis {
+    background-image: url('/flags/1x1/iq.svg?_cchid=fb484ddc9d7e580b181b0fbe061dad28')
+}
+
+.fi-ir {
+    background-image: url('/flags/4x3/ir.svg?_cchid=9bb2c335fa3c0949207d62c6cb03bdd6')
+}
+
+.fi-ir.fis {
+    background-image: url('/flags/1x1/ir.svg?_cchid=c7dc57d648b754797f1ce7abe2064444')
+}
+
+.fi-is {
+    background-image: url('/flags/4x3/is.svg?_cchid=262b99a33993cbe344260071c64f115f')
+}
+
+.fi-is.fis {
+    background-image: url('/flags/1x1/is.svg?_cchid=62fc60c2a32efe98665bf21c159e3fb2')
+}
+
+.fi-it {
+    background-image: url('/flags/4x3/it.svg?_cchid=1d72a5dec3acd073763570e3e5fdf784')
+}
+
+.fi-it.fis {
+    background-image: url('/flags/1x1/it.svg?_cchid=5dd499d625a2415aef316563427b867a')
+}
+
+.fi-je {
+    background-image: url('/flags/4x3/je.svg?_cchid=383ddb5671656976b78687df0dc2edcd')
+}
+
+.fi-je.fis {
+    background-image: url('/flags/1x1/je.svg?_cchid=3b7cb5dfc9b85a9c59a953b0202ab6bd')
+}
+
+.fi-jm {
+    background-image: url('/flags/4x3/jm.svg?_cchid=7c6602774a31cdc41f9ceae4ab057c3f')
+}
+
+.fi-jm.fis {
+    background-image: url('/flags/1x1/jm.svg?_cchid=a5de6786f06f1deaa135accb7b661175')
+}
+
+.fi-jo {
+    background-image: url('/flags/4x3/jo.svg?_cchid=7b0141136c77225f631b82cbe811a586')
+}
+
+.fi-jo.fis {
+    background-image: url('/flags/1x1/jo.svg?_cchid=57aea25412557250dea13e9fd9610592')
+}
+
+.fi-jp {
+    background-image: url('/flags/4x3/jp.svg?_cchid=1dbf51e247c6c40000c51a1070515fe9')
+}
+
+.fi-jp.fis {
+    background-image: url('/flags/1x1/jp.svg?_cchid=c76ceb8ae536f3f2a130862acb951070')
+}
+
+.fi-ke {
+    background-image: url('/flags/4x3/ke.svg?_cchid=3db68a6675308826f2355392d7a2db65')
+}
+
+.fi-ke.fis {
+    background-image: url('/flags/1x1/ke.svg?_cchid=56262ac0a527700ec9da374a5d6a9cc1')
+}
+
+.fi-kg {
+    background-image: url('/flags/4x3/kg.svg?_cchid=f4257dfe8a3a9221607ddaaf87aadc60')
+}
+
+.fi-kg.fis {
+    background-image: url('/flags/1x1/kg.svg?_cchid=b69a9f2ca5e249c431cbe1192cceeedf')
+}
+
+.fi-kh {
+    background-image: url('/flags/4x3/kh.svg?_cchid=a17374375f50fae95a315cdc23913f0c')
+}
+
+.fi-kh.fis {
+    background-image: url('/flags/1x1/kh.svg?_cchid=684bc3d24f1fe7ec72df4456ff812b5e')
+}
+
+.fi-ki {
+    background-image: url('/flags/4x3/ki.svg?_cchid=2fa0e53df493fee3884410571f6e4542')
+}
+
+.fi-ki.fis {
+    background-image: url('/flags/1x1/ki.svg?_cchid=dc33f4463f154e405b8f0b37309061e8')
+}
+
+.fi-km {
+    background-image: url('/flags/4x3/km.svg?_cchid=38d64550462fce58e2b2ddb634feda64')
+}
+
+.fi-km.fis {
+    background-image: url('/flags/1x1/km.svg?_cchid=544f7c0ffcd36ab36e23d919d299c041')
+}
+
+.fi-kn {
+    background-image: url('/flags/4x3/kn.svg?_cchid=f8310b405994251fd597525ff236a377')
+}
+
+.fi-kn.fis {
+    background-image: url('/flags/1x1/kn.svg?_cchid=8a7d22b09de9c95d3e59c7e0989ca16a')
+}
+
+.fi-kp {
+    background-image: url('/flags/4x3/kp.svg?_cchid=3f06f4b2d6cbe62a40fbac43f7a5e179')
+}
+
+.fi-kp.fis {
+    background-image: url('/flags/1x1/kp.svg?_cchid=9ba3ded1433f9788973f7a714ace0b13')
+}
+
+.fi-kr {
+    background-image: url('/flags/4x3/kr.svg?_cchid=9cdfad72c8e727ef9a0567798866d0e2')
+}
+
+.fi-kr.fis {
+    background-image: url('/flags/1x1/kr.svg?_cchid=1ae5f49ec0f10e8ba4a268767e9f414d')
+}
+
+.fi-kw {
+    background-image: url('/flags/4x3/kw.svg?_cchid=ae1006cd390348198b00d6df6a0a7ca5')
+}
+
+.fi-kw.fis {
+    background-image: url('/flags/1x1/kw.svg?_cchid=55d5c54114933d17e19711619b3a2a59')
+}
+
+.fi-ky {
+    background-image: url('/flags/4x3/ky.svg?_cchid=5f7012e66f76fda1f4cb5828dd5b2e5c')
+}
+
+.fi-ky.fis {
+    background-image: url('/flags/1x1/ky.svg?_cchid=e33a7813b55efa207856a5475f6a397c')
+}
+
+.fi-kz {
+    background-image: url('/flags/4x3/kz.svg?_cchid=4bea1b005bd1ec8a3f8676225d5ed9dc')
+}
+
+.fi-kz.fis {
+    background-image: url('/flags/1x1/kz.svg?_cchid=2a17ae3505100e28acb0e7c43e50bb0c')
+}
+
+.fi-la {
+    background-image: url('/flags/4x3/la.svg?_cchid=000f7e9866f269b2ad4f67daf6b45310')
+}
+
+.fi-la.fis {
+    background-image: url('/flags/1x1/la.svg?_cchid=c2dbd1b6484f46caca62b17da900929c')
+}
+
+.fi-lb {
+    background-image: url('/flags/4x3/lb.svg?_cchid=fdf7e7729c66c92380744ba72d8a481f')
+}
+
+.fi-lb.fis {
+    background-image: url('/flags/1x1/lb.svg?_cchid=7f3c11b74fa4576e11c21b080ff6d994')
+}
+
+.fi-lc {
+    background-image: url('/flags/4x3/lc.svg?_cchid=940e9ba93eec286b5abee7657cf03283')
+}
+
+.fi-lc.fis {
+    background-image: url('/flags/1x1/lc.svg?_cchid=25f4a7464ca9fe11f839731563b84b07')
+}
+
+.fi-li {
+    background-image: url('/flags/4x3/li.svg?_cchid=0f6fda67daaceda3756227d9169233c0')
+}
+
+.fi-li.fis {
+    background-image: url('/flags/1x1/li.svg?_cchid=c2a0388c8134a1fa5cc3d6f9cdac15ab')
+}
+
+.fi-lk {
+    background-image: url('/flags/4x3/lk.svg?_cchid=9018cbe9a08c7c446eb40150013dc91f')
+}
+
+.fi-lk.fis {
+    background-image: url('/flags/1x1/lk.svg?_cchid=03c20243a2f8082383e0672698894aa1')
+}
+
+.fi-lr {
+    background-image: url('/flags/4x3/lr.svg?_cchid=673bc938fed43b26a9b8e9af8b3295eb')
+}
+
+.fi-lr.fis {
+    background-image: url('/flags/1x1/lr.svg?_cchid=fc620831ebcf2dd6e0b6877274a2d98f')
+}
+
+.fi-ls {
+    background-image: url('/flags/4x3/ls.svg?_cchid=4da8ca4f6e1c0d5486f4d6e30256c6d6')
+}
+
+.fi-ls.fis {
+    background-image: url('/flags/1x1/ls.svg?_cchid=4e82463d0f9293120da93e234ebd6d0a')
+}
+
+.fi-lt {
+    background-image: url('/flags/4x3/lt.svg?_cchid=7e7110b65bbe5cbfb8a84a0e5f68284e')
+}
+
+.fi-lt.fis {
+    background-image: url('/flags/1x1/lt.svg?_cchid=39f9399afe4e99afc7807a3614269ea6')
+}
+
+.fi-lu {
+    background-image: url('/flags/4x3/lu.svg?_cchid=7f70b02c8514c31fc4de448b419ae0d6')
+}
+
+.fi-lu.fis {
+    background-image: url('/flags/1x1/lu.svg?_cchid=0d040ab20ca2d24321a65c76f489b04e')
+}
+
+.fi-lv {
+    background-image: url('/flags/4x3/lv.svg?_cchid=0b4e6e1a21a939a1a474341da5aee4ca')
+}
+
+.fi-lv.fis {
+    background-image: url('/flags/1x1/lv.svg?_cchid=eeafeb0fec4b2b31672ac508265f1712')
+}
+
+.fi-ly {
+    background-image: url('/flags/4x3/ly.svg?_cchid=d88ce1726ac6f1c4e02f6617ba5ebff0')
+}
+
+.fi-ly.fis {
+    background-image: url('/flags/1x1/ly.svg?_cchid=e2376c2fd6f0e4d4d14dc2ea241eb144')
+}
+
+.fi-ma {
+    background-image: url('/flags/4x3/ma.svg?_cchid=a2e6a76e5f38058fd28b706beeb6a1b7')
+}
+
+.fi-ma.fis {
+    background-image: url('/flags/1x1/ma.svg?_cchid=7fe34c1e160dc851310c1a6469a8379a')
+}
+
+.fi-mc {
+    background-image: url('/flags/4x3/mc.svg?_cchid=acbf04f75fb877d1c2aef0f553c8d629')
+}
+
+.fi-mc.fis {
+    background-image: url('/flags/1x1/mc.svg?_cchid=585834807536af77d01bb714e142528a')
+}
+
+.fi-md {
+    background-image: url('/flags/4x3/md.svg?_cchid=d4e707da066346718010da32dcbf1802')
+}
+
+.fi-md.fis {
+    background-image: url('/flags/1x1/md.svg?_cchid=d692cd261cdb5fddab55e51cb48eba57')
+}
+
+.fi-me {
+    background-image: url('/flags/4x3/me.svg?_cchid=144e25db369a068c521780d81ee22bcb')
+}
+
+.fi-me.fis {
+    background-image: url('/flags/1x1/me.svg?_cchid=af7398f3281863944d779a77ea6354df')
+}
+
+.fi-mf {
+    background-image: url('/flags/4x3/mf.svg?_cchid=1359039ac6468ef0d4bcdb6ca17a44a6')
+}
+
+.fi-mf.fis {
+    background-image: url('/flags/1x1/mf.svg?_cchid=53ca53f99d8f63d43f4e785b2fee0032')
+}
+
+.fi-mg {
+    background-image: url('/flags/4x3/mg.svg?_cchid=7a54f12dc753217b1c0aaa7bf685f9fe')
+}
+
+.fi-mg.fis {
+    background-image: url('/flags/1x1/mg.svg?_cchid=b23fb375f4dc2242ad3e9df8c9d1e2fc')
+}
+
+.fi-mh {
+    background-image: url('/flags/4x3/mh.svg?_cchid=63433c4cd0e5030836734de14bc1e52a')
+}
+
+.fi-mh.fis {
+    background-image: url('/flags/1x1/mh.svg?_cchid=6a803acb4c81860bad1b0d7d06271ae1')
+}
+
+.fi-mk {
+    background-image: url('/flags/4x3/mk.svg?_cchid=b96b8a63c2939ef1e4cebb9585908591')
+}
+
+.fi-mk.fis {
+    background-image: url('/flags/1x1/mk.svg?_cchid=aa4bb76fa561509b29d63cd3edd8a1a9')
+}
+
+.fi-ml {
+    background-image: url('/flags/4x3/ml.svg?_cchid=1dd7a9ccbcd179a5a3fba550970ad75c')
+}
+
+.fi-ml.fis {
+    background-image: url('/flags/1x1/ml.svg?_cchid=e264a6264f02dd9b1afba338062b2d75')
+}
+
+.fi-mm {
+    background-image: url('/flags/4x3/mm.svg?_cchid=6d702a74ce6149ddb4a4fe643f12d1fa')
+}
+
+.fi-mm.fis {
+    background-image: url('/flags/1x1/mm.svg?_cchid=46545f205421594cd8940f80917ad786')
+}
+
+.fi-mn {
+    background-image: url('/flags/4x3/mn.svg?_cchid=1ef812fb28554e7d9b4c2da6b96e89c9')
+}
+
+.fi-mn.fis {
+    background-image: url('/flags/1x1/mn.svg?_cchid=6eadca67629e57a16d08ef9182e9cfc6')
+}
+
+.fi-mo {
+    background-image: url('/flags/4x3/mo.svg?_cchid=e26a4c9d3e2d83eaf88f89a730cc1538')
+}
+
+.fi-mo.fis {
+    background-image: url('/flags/1x1/mo.svg?_cchid=775f09c6c570dba0bd531c10f7afaf37')
+}
+
+.fi-mp {
+    background-image: url('/flags/4x3/mp.svg?_cchid=fcca6f222c12fe74ee924f54df5a47f5')
+}
+
+.fi-mp.fis {
+    background-image: url('/flags/1x1/mp.svg?_cchid=2f14f98617b08e34dfe0aeee54087fda')
+}
+
+.fi-mq {
+    background-image: url('/flags/4x3/mq.svg?_cchid=1359039ac6468ef0d4bcdb6ca17a44a6')
+}
+
+.fi-mq.fis {
+    background-image: url('/flags/1x1/mq.svg?_cchid=d3d7e77215f627a6c9bed65d56e8a73c')
+}
+
+.fi-mr {
+    background-image: url('/flags/4x3/mr.svg?_cchid=4610ac53854ba558c74d5c8eccc21e2a')
+}
+
+.fi-mr.fis {
+    background-image: url('/flags/1x1/mr.svg?_cchid=d8751050310e1e022aa5ff768a8946be')
+}
+
+.fi-ms {
+    background-image: url('/flags/4x3/ms.svg?_cchid=be07a14636ff98949ae89501ec3d5c03')
+}
+
+.fi-ms.fis {
+    background-image: url('/flags/1x1/ms.svg?_cchid=b7e0e958d49e2c50f71787f98428dd01')
+}
+
+.fi-mt {
+    background-image: url('/flags/4x3/mt.svg?_cchid=f5c28c0a6c18fc4085c08a50ecfb6d6b')
+}
+
+.fi-mt.fis {
+    background-image: url('/flags/1x1/mt.svg?_cchid=485b92ba43322d0991016a13ac4f63c9')
+}
+
+.fi-mu {
+    background-image: url('/flags/4x3/mu.svg?_cchid=46514c8008dc3564e49eaa790f28e255')
+}
+
+.fi-mu.fis {
+    background-image: url('/flags/1x1/mu.svg?_cchid=b111c44ad076945213b75dc8ec0b9ee4')
+}
+
+.fi-mv {
+    background-image: url('/flags/4x3/mv.svg?_cchid=44a3b21f0ab17367c095a8798f7cc4da')
+}
+
+.fi-mv.fis {
+    background-image: url('/flags/1x1/mv.svg?_cchid=8ea7a65ef62eec34311194b49971388c')
+}
+
+.fi-mw {
+    background-image: url('/flags/4x3/mw.svg?_cchid=dc4b154514985cbac37c6023d598243f')
+}
+
+.fi-mw.fis {
+    background-image: url('/flags/1x1/mw.svg?_cchid=a15a02770e0543c3dce2e1ddff1b5202')
+}
+
+.fi-mx {
+    background-image: url('/flags/4x3/mx.svg?_cchid=d326007cf87dba95a56cb4a25b408558')
+}
+
+.fi-mx.fis {
+    background-image: url('/flags/1x1/mx.svg?_cchid=8daf58397a26b4ca719f4794f42050a1')
+}
+
+.fi-my {
+    background-image: url('/flags/4x3/my.svg?_cchid=c1d190c31dd3f86046d695f0aeedcd34')
+}
+
+.fi-my.fis {
+    background-image: url('/flags/1x1/my.svg?_cchid=9ce07fd4c90dd0f4a059668651109a17')
+}
+
+.fi-mz {
+    background-image: url('/flags/4x3/mz.svg?_cchid=ee2126c614050864c6fe6ae191bece1f')
+}
+
+.fi-mz.fis {
+    background-image: url('/flags/1x1/mz.svg?_cchid=9bd8241a3deccd61b215b08b8baa9bce')
+}
+
+.fi-na {
+    background-image: url('/flags/4x3/na.svg?_cchid=0d45af211e54a89954a129c9f5a6a8f9')
+}
+
+.fi-na.fis {
+    background-image: url('/flags/1x1/na.svg?_cchid=a1fad26df8548f6c42c43ee4bd00a268')
+}
+
+.fi-nc {
+    background-image: url('/flags/4x3/nc.svg?_cchid=c292b9576b6951a3b81714d01975dba9')
+}
+
+.fi-nc.fis {
+    background-image: url('/flags/1x1/nc.svg?_cchid=71d4e8a81e6b59dd2c4b92d343fc4b23')
+}
+
+.fi-ne {
+    background-image: url('/flags/4x3/ne.svg?_cchid=5c109026a107f910512b09e208a90538')
+}
+
+.fi-ne.fis {
+    background-image: url('/flags/1x1/ne.svg?_cchid=052dc6649ad238e3437d2bf997edae29')
+}
+
+.fi-nf {
+    background-image: url('/flags/4x3/nf.svg?_cchid=cc20348d89f9f1702b1a6760f33697e2')
+}
+
+.fi-nf.fis {
+    background-image: url('/flags/1x1/nf.svg?_cchid=69e6c4256e9cb84a999e0b71d7c2a9de')
+}
+
+.fi-ng {
+    background-image: url('/flags/4x3/ng.svg?_cchid=9eea84efdc0eb2553b9d3502feac044d')
+}
+
+.fi-ng.fis {
+    background-image: url('/flags/1x1/ng.svg?_cchid=b9197e69f00cd0f998a46b0080c23229')
+}
+
+.fi-ni {
+    background-image: url('/flags/4x3/ni.svg?_cchid=5d25063c36586808c99e08b94217b794')
+}
+
+.fi-ni.fis {
+    background-image: url('/flags/1x1/ni.svg?_cchid=55d27877cf32791888892abd5f92b4ed')
+}
+
+.fi-nl {
+    background-image: url('/flags/4x3/nl.svg?_cchid=f685765a298db5ba59fddfa6de08020e')
+}
+
+.fi-nl.fis {
+    background-image: url('/flags/1x1/nl.svg?_cchid=09f3280d2f23aa573c15e3150d550a91')
+}
+
+.fi-no {
+    background-image: url('/flags/4x3/no.svg?_cchid=859a13561a1b24bfa65fb1a03835da49')
+}
+
+.fi-no.fis {
+    background-image: url('/flags/1x1/no.svg?_cchid=93a89ef2894bcbf6c82115737277da87')
+}
+
+.fi-np {
+    background-image: url('/flags/4x3/np.svg?_cchid=5e78f7a76448b585ae10a9a96249273f')
+}
+
+.fi-np.fis {
+    background-image: url('/flags/1x1/np.svg?_cchid=2e4492f7c654b873133e4d27d362ee1b')
+}
+
+.fi-nr {
+    background-image: url('/flags/4x3/nr.svg?_cchid=54af7342598cb40e2032a86ddf77a12e')
+}
+
+.fi-nr.fis {
+    background-image: url('/flags/1x1/nr.svg?_cchid=1a3302a6907539729aa9dc498d69db04')
+}
+
+.fi-nu {
+    background-image: url('/flags/4x3/nu.svg?_cchid=bfd6de48e40574ec6d86c6e0589baa48')
+}
+
+.fi-nu.fis {
+    background-image: url('/flags/1x1/nu.svg?_cchid=c5c46b882043711f43dc55bfab45d54c')
+}
+
+.fi-nz {
+    background-image: url('/flags/4x3/nz.svg?_cchid=55c65e06d0b73b57f438e2af94f730ff')
+}
+
+.fi-nz.fis {
+    background-image: url('/flags/1x1/nz.svg?_cchid=f05bbd7f76c5d749540ff4ab43752e2f')
+}
+
+.fi-om {
+    background-image: url('/flags/4x3/om.svg?_cchid=d8fbf0d229e2fa0745371e95cf773018')
+}
+
+.fi-om.fis {
+    background-image: url('/flags/1x1/om.svg?_cchid=b2eda9710f86ac203c7faa8c217a2c67')
+}
+
+.fi-pa {
+    background-image: url('/flags/4x3/pa.svg?_cchid=2827f6a5eb2953ae35ad7f8722312bda')
+}
+
+.fi-pa.fis {
+    background-image: url('/flags/1x1/pa.svg?_cchid=a9f96c702b2eb468da69f19843f57c2c')
+}
+
+.fi-pe {
+    background-image: url('/flags/4x3/pe.svg?_cchid=9336bb9fae1574a4a1dca24020fd2175')
+}
+
+.fi-pe.fis {
+    background-image: url('/flags/1x1/pe.svg?_cchid=c0d3dc9889d6ee8ecee9f05b0028ddd7')
+}
+
+.fi-pf {
+    background-image: url('/flags/4x3/pf.svg?_cchid=b9d2538cd84201df2b28689eba25fa5f')
+}
+
+.fi-pf.fis {
+    background-image: url('/flags/1x1/pf.svg?_cchid=1c64a6191e67c4d392ee1aefd265aeca')
+}
+
+.fi-pg {
+    background-image: url('/flags/4x3/pg.svg?_cchid=350974494867e834ec0fae91d98e9efd')
+}
+
+.fi-pg.fis {
+    background-image: url('/flags/1x1/pg.svg?_cchid=332c6d287600a94d9738a24871dc55a4')
+}
+
+.fi-ph {
+    background-image: url('/flags/4x3/ph.svg?_cchid=64c3d8b03bf21d10661c2384ebf3247f')
+}
+
+.fi-ph.fis {
+    background-image: url('/flags/1x1/ph.svg?_cchid=2b752ac2031e1cb659679494d62dff81')
+}
+
+.fi-pk {
+    background-image: url('/flags/4x3/pk.svg?_cchid=8bb4156614d25e06c8e3b1ed3a131d6c')
+}
+
+.fi-pk.fis {
+    background-image: url('/flags/1x1/pk.svg?_cchid=a48a78160fca372d71e6d2168da00a39')
+}
+
+.fi-pl {
+    background-image: url('/flags/4x3/pl.svg?_cchid=f7adaa942c63ca98f1d2362bc67c45e3')
+}
+
+.fi-pl.fis {
+    background-image: url('/flags/1x1/pl.svg?_cchid=8dae965602d8036252672fc2f07977eb')
+}
+
+.fi-pm {
+    background-image: url('/flags/4x3/pm.svg?_cchid=1359039ac6468ef0d4bcdb6ca17a44a6')
+}
+
+.fi-pm.fis {
+    background-image: url('/flags/1x1/pm.svg?_cchid=d3d7e77215f627a6c9bed65d56e8a73c')
+}
+
+.fi-pn {
+    background-image: url('/flags/4x3/pn.svg?_cchid=7d49d6f9d00d6e435c6d34084f21491f')
+}
+
+.fi-pn.fis {
+    background-image: url('/flags/1x1/pn.svg?_cchid=4dffd3555c98433cbccfb932d3427cac')
+}
+
+.fi-pr {
+    background-image: url('/flags/4x3/pr.svg?_cchid=16828b387933e4a8b774c6b02d79735d')
+}
+
+.fi-pr.fis {
+    background-image: url('/flags/1x1/pr.svg?_cchid=4f7a22231c99fd49e27c4c3d4617b3d2')
+}
+
+.fi-ps {
+    background-image: url('/flags/4x3/ps.svg?_cchid=66f425e1a07a1ee2209d809e4851a2f3')
+}
+
+.fi-ps.fis {
+    background-image: url('/flags/1x1/ps.svg?_cchid=19b8c6604395a26c92a2ceda41105f2a')
+}
+
+.fi-pt {
+    background-image: url('/flags/4x3/pt.svg?_cchid=a36b3d87508ad8f6a6bc6787bbe808ed')
+}
+
+.fi-pt.fis {
+    background-image: url('/flags/1x1/pt.svg?_cchid=23adb9fe16db7e7f840b59f3d71877d8')
+}
+
+.fi-pw {
+    background-image: url('/flags/4x3/pw.svg?_cchid=232251df33a333c11db5c25dd84278e4')
+}
+
+.fi-pw.fis {
+    background-image: url('/flags/1x1/pw.svg?_cchid=81f1819affda4f6860247b88bad54cd8')
+}
+
+.fi-py {
+    background-image: url('/flags/4x3/py.svg?_cchid=d3e57b21c6b9cbe61a792e6592e1811b')
+}
+
+.fi-py.fis {
+    background-image: url('/flags/1x1/py.svg?_cchid=e16a905eb12173f7df1c0cb01d299477')
+}
+
+.fi-qa {
+    background-image: url('/flags/4x3/qa.svg?_cchid=9dfdc1ae61fc572c4d2f7b329a3eeeb5')
+}
+
+.fi-qa.fis {
+    background-image: url('/flags/1x1/qa.svg?_cchid=3371653310c15d2a37b649abe6e1ee70')
+}
+
+.fi-re {
+    background-image: url('/flags/4x3/re.svg?_cchid=1359039ac6468ef0d4bcdb6ca17a44a6')
+}
+
+.fi-re.fis {
+    background-image: url('/flags/1x1/re.svg?_cchid=36610173ad3d979401c1fad4235c8e1a')
+}
+
+.fi-ro {
+    background-image: url('/flags/4x3/ro.svg?_cchid=e9130a28a9ba2b93433f21a2cd5971f3')
+}
+
+.fi-ro.fis {
+    background-image: url('/flags/1x1/ro.svg?_cchid=18358326c569c5d7584a6000ad4c87bf')
+}
+
+.fi-rs {
+    background-image: url('/flags/4x3/rs.svg?_cchid=30a43dc04af961a71fdec9e094f952e4')
+}
+
+.fi-rs.fis {
+    background-image: url('/flags/1x1/rs.svg?_cchid=47e0b9027d6e6593bf51e1536265c7f2')
+}
+
+.fi-ru {
+    background-image: url('/flags/4x3/ru.svg?_cchid=ab61f31edf4ad95b5ae00aff3be99197')
+}
+
+.fi-ru.fis {
+    background-image: url('/flags/1x1/ru.svg?_cchid=a36db5ee2456831a8fdd8775a4c7fc82')
+}
+
+.fi-rw {
+    background-image: url('/flags/4x3/rw.svg?_cchid=e28b5d139e8f8ef57a246718fad4f773')
+}
+
+.fi-rw.fis {
+    background-image: url('/flags/1x1/rw.svg?_cchid=240b3961d4e64a4a7ca3242d9293ed3b')
+}
+
+.fi-sa {
+    background-image: url('/flags/4x3/sa.svg?_cchid=80a16c9fedbc43144aada3f004629ac3')
+}
+
+.fi-sa.fis {
+    background-image: url('/flags/1x1/sa.svg?_cchid=8e6506676c9c9507b7d6de51339c983b')
+}
+
+.fi-sb {
+    background-image: url('/flags/4x3/sb.svg?_cchid=138cc3491ef68d30006862c87b784544')
+}
+
+.fi-sb.fis {
+    background-image: url('/flags/1x1/sb.svg?_cchid=1c2cc19e59a2aee4e5db9541c18fa54a')
+}
+
+.fi-sc {
+    background-image: url('/flags/4x3/sc.svg?_cchid=ab4767bc4088728a6841e7e578f6c7a8')
+}
+
+.fi-sc.fis {
+    background-image: url('/flags/1x1/sc.svg?_cchid=29da75118abb5d8283e743f70df21469')
+}
+
+.fi-sd {
+    background-image: url('/flags/4x3/sd.svg?_cchid=54aa0c7f8087e624ca5e820010d92063')
+}
+
+.fi-sd.fis {
+    background-image: url('/flags/1x1/sd.svg?_cchid=252ae6abc70d21e3ef3d5b427c9a704d')
+}
+
+.fi-se {
+    background-image: url('/flags/4x3/se.svg?_cchid=e9e24cfb2d85c7e39aafe267fffb0810')
+}
+
+.fi-se.fis {
+    background-image: url('/flags/1x1/se.svg?_cchid=c385ba828f344e6856e6bcd4441582c8')
+}
+
+.fi-sg {
+    background-image: url('/flags/4x3/sg.svg?_cchid=966947b511d06da100d23e5b29e5ec75')
+}
+
+.fi-sg.fis {
+    background-image: url('/flags/1x1/sg.svg?_cchid=34ca8973daff498636ce08304b93e064')
+}
+
+.fi-sh {
+    background-image: url('/flags/4x3/sh.svg?_cchid=42100063de4741612cb71e9eb2c246a8')
+}
+
+.fi-sh.fis {
+    background-image: url('/flags/1x1/sh.svg?_cchid=d6b5d6490da14c67c2b0301903a4bda8')
+}
+
+.fi-si {
+    background-image: url('/flags/4x3/si.svg?_cchid=d415adba66ed26827f5851cc554cbc5d')
+}
+
+.fi-si.fis {
+    background-image: url('/flags/1x1/si.svg?_cchid=155d80f388893760f39667fef5f1b9cf')
+}
+
+.fi-sj {
+    background-image: url('/flags/4x3/sj.svg?_cchid=5b6dddaf6a82ad8090d313f3088b7e2d')
+}
+
+.fi-sj.fis {
+    background-image: url('/flags/1x1/sj.svg?_cchid=423c02479d090d9f7a4463e555e31678')
+}
+
+.fi-sk {
+    background-image: url('/flags/4x3/sk.svg?_cchid=6363e990e97551bbabf9316bf0200d30')
+}
+
+.fi-sk.fis {
+    background-image: url('/flags/1x1/sk.svg?_cchid=80d4eb69228133f72b5dcd7d0f9cb8e8')
+}
+
+.fi-sl {
+    background-image: url('/flags/4x3/sl.svg?_cchid=af0884d411f36ff8e0fb199a00b70691')
+}
+
+.fi-sl.fis {
+    background-image: url('/flags/1x1/sl.svg?_cchid=786d65405d414bb102d19f39f5182511')
+}
+
+.fi-sm {
+    background-image: url('/flags/4x3/sm.svg?_cchid=1553b4ae7cafa07d21a6c993224568ab')
+}
+
+.fi-sm.fis {
+    background-image: url('/flags/1x1/sm.svg?_cchid=ef685a184ac2ab0ce84a8e775eb80ad5')
+}
+
+.fi-sn {
+    background-image: url('/flags/4x3/sn.svg?_cchid=091e42c6f8d95a1740ff343dcec62c7a')
+}
+
+.fi-sn.fis {
+    background-image: url('/flags/1x1/sn.svg?_cchid=eed2f85384a1674211601ebf35a9bc72')
+}
+
+.fi-so {
+    background-image: url('/flags/4x3/so.svg?_cchid=49c23c23f0c1010edb565601afdd66e2')
+}
+
+.fi-so.fis {
+    background-image: url('/flags/1x1/so.svg?_cchid=7c9570ec9c3744c3854910acdda65f50')
+}
+
+.fi-sr {
+    background-image: url('/flags/4x3/sr.svg?_cchid=07e91c157e4b9e240d9b004da3529f08')
+}
+
+.fi-sr.fis {
+    background-image: url('/flags/1x1/sr.svg?_cchid=5bd4f0200ffd168102aa2e4b9a16ab83')
+}
+
+.fi-ss {
+    background-image: url('/flags/4x3/ss.svg?_cchid=9a15dd43db84232e2a99b343c73dc2f0')
+}
+
+.fi-ss.fis {
+    background-image: url('/flags/1x1/ss.svg?_cchid=ee171740e2f8452ad2c9e7b7e00d7816')
+}
+
+.fi-st {
+    background-image: url('/flags/4x3/st.svg?_cchid=12444111a834c4924ca5a5d6c8bbb10a')
+}
+
+.fi-st.fis {
+    background-image: url('/flags/1x1/st.svg?_cchid=dafba84c6c06b87a0132aa419eb44057')
+}
+
+.fi-sv {
+    background-image: url('/flags/4x3/sv.svg?_cchid=2e44b8d35c6d3192f072f15ae1215e29')
+}
+
+.fi-sv.fis {
+    background-image: url('/flags/1x1/sv.svg?_cchid=b880c91335cf1668f0af1347668636b3')
+}
+
+.fi-sx {
+    background-image: url('/flags/4x3/sx.svg?_cchid=1ca5cba81f81e2e5763c1e39a822983d')
+}
+
+.fi-sx.fis {
+    background-image: url('/flags/1x1/sx.svg?_cchid=f37487ff7758754b74f5b437c8a31bce')
+}
+
+.fi-sy {
+    background-image: url('/flags/4x3/sy.svg?_cchid=b288d06027dd0a86539faa3b1635cc73')
+}
+
+.fi-sy.fis {
+    background-image: url('/flags/1x1/sy.svg?_cchid=faf27c5b9e2478761658304ead2ab0ab')
+}
+
+.fi-sz {
+    background-image: url('/flags/4x3/sz.svg?_cchid=9a86ca49275c8a3d5a8868785018a2c7')
+}
+
+.fi-sz.fis {
+    background-image: url('/flags/1x1/sz.svg?_cchid=c1faadf12a329053976c64187195d002')
+}
+
+.fi-tc {
+    background-image: url('/flags/4x3/tc.svg?_cchid=d247584303ee616e0592ecb3e2db3f4e')
+}
+
+.fi-tc.fis {
+    background-image: url('/flags/1x1/tc.svg?_cchid=cf423a73cb22b53b3358b0f6875aa126')
+}
+
+.fi-td {
+    background-image: url('/flags/4x3/td.svg?_cchid=e092133da9e0fba424dba80e4de91d3f')
+}
+
+.fi-td.fis {
+    background-image: url('/flags/1x1/td.svg?_cchid=d2ea13f1a68997e5aff9aeb378d8f454')
+}
+
+.fi-tf {
+    background-image: url('/flags/4x3/tf.svg?_cchid=b444aed98557f781c72b655c278633d6')
+}
+
+.fi-tf.fis {
+    background-image: url('/flags/1x1/tf.svg?_cchid=d82ec6441cc51a924ddaf3762c42ff4b')
+}
+
+.fi-tg {
+    background-image: url('/flags/4x3/tg.svg?_cchid=95cfc626f2ee3b15e9ea8848ebe85bc9')
+}
+
+.fi-tg.fis {
+    background-image: url('/flags/1x1/tg.svg?_cchid=96eb438fac3e87dbb5024b38f32e6cc9')
+}
+
+.fi-th {
+    background-image: url('/flags/4x3/th.svg?_cchid=bcc03a3cd1a367274a2444aff71c0a68')
+}
+
+.fi-th.fis {
+    background-image: url('/flags/1x1/th.svg?_cchid=18046547363916c7bdfe4556f7cd6989')
+}
+
+.fi-tj {
+    background-image: url('/flags/4x3/tj.svg?_cchid=71c18cc6c6e3f4a4df3bcd3e1fd4c8a1')
+}
+
+.fi-tj.fis {
+    background-image: url('/flags/1x1/tj.svg?_cchid=4891f0a0f44ac4543b62a86c452ea5f6')
+}
+
+.fi-tk {
+    background-image: url('/flags/4x3/tk.svg?_cchid=5a5f29010b5758c306125f3cd2d061b0')
+}
+
+.fi-tk.fis {
+    background-image: url('/flags/1x1/tk.svg?_cchid=a19184cd12d71fae2c2352f1cd8746af')
+}
+
+.fi-tl {
+    background-image: url('/flags/4x3/tl.svg?_cchid=9482e6980f321a6b0384da7d3a9cc9d0')
+}
+
+.fi-tl.fis {
+    background-image: url('/flags/1x1/tl.svg?_cchid=5cae1a035cecacb8fe497dc3e8a73725')
+}
+
+.fi-tm {
+    background-image: url('/flags/4x3/tm.svg?_cchid=a1c18f1aeedd55fb7818bd2d7fa4ce83')
+}
+
+.fi-tm.fis {
+    background-image: url('/flags/1x1/tm.svg?_cchid=645e64b860c400bc9b6cd351cd501d0c')
+}
+
+.fi-tn {
+    background-image: url('/flags/4x3/tn.svg?_cchid=737db660136b37e04f78d16f5cb25b8c')
+}
+
+.fi-tn.fis {
+    background-image: url('/flags/1x1/tn.svg?_cchid=9a16a41960bad0ea325ffae0e9d9c12a')
+}
+
+.fi-to {
+    background-image: url('/flags/4x3/to.svg?_cchid=cccdba4c3dfd080aeda7302c23588c7a')
+}
+
+.fi-to.fis {
+    background-image: url('/flags/1x1/to.svg?_cchid=ed0e1091a188b0c14c20a47d943cd29c')
+}
+
+.fi-tr {
+    background-image: url('/flags/4x3/tr.svg?_cchid=4dd4b60c8a5e3dad5e65fdfa9745c03f')
+}
+
+.fi-tr.fis {
+    background-image: url('/flags/1x1/tr.svg?_cchid=63e4c16c4a3a5468dfcab187a831960c')
+}
+
+.fi-tt {
+    background-image: url('/flags/4x3/tt.svg?_cchid=db362840eedbb651bff0b539e387bfb6')
+}
+
+.fi-tt.fis {
+    background-image: url('/flags/1x1/tt.svg?_cchid=cd3e7c0c1bc2a0c7ac19297ce411390f')
+}
+
+.fi-tv {
+    background-image: url('/flags/4x3/tv.svg?_cchid=c75afdde63ae0e1e205c5dfd653afffe')
+}
+
+.fi-tv.fis {
+    background-image: url('/flags/1x1/tv.svg?_cchid=58748d51b2bfc83e9f85688e7f7d7660')
+}
+
+.fi-tw {
+    background-image: url('/flags/4x3/tw.svg?_cchid=ecdb8344f97cbe2640def79cb5715b7a')
+}
+
+.fi-tw.fis {
+    background-image: url('/flags/1x1/tw.svg?_cchid=f797bda3cb02eaf8a4eb1837eb5e7e9b')
+}
+
+.fi-tz {
+    background-image: url('/flags/4x3/tz.svg?_cchid=7feb5df03a4bfdf45a2d07142e96360f')
+}
+
+.fi-tz.fis {
+    background-image: url('/flags/1x1/tz.svg?_cchid=4176da55c70a37d45d77ff87c96d4f97')
+}
+
+.fi-ua {
+    background-image: url('/flags/4x3/ua.svg?_cchid=6d944bf795f95c09b2f78819af42db89')
+}
+
+.fi-ua.fis {
+    background-image: url('/flags/1x1/ua.svg?_cchid=4437573c77341db30e92c4d5883944bb')
+}
+
+.fi-ug {
+    background-image: url('/flags/4x3/ug.svg?_cchid=d4979cba12c8cc75c405f6e60cec3ff1')
+}
+
+.fi-ug.fis {
+    background-image: url('/flags/1x1/ug.svg?_cchid=10cc3e07e7798c6735146f6a655c8b1e')
+}
+
+.fi-um {
+    background-image: url('/flags/4x3/um.svg?_cchid=13700d16d565470751f43b7d2983bc20')
+}
+
+.fi-um.fis {
+    background-image: url('/flags/1x1/um.svg?_cchid=eeb270bfd15cfecfd34e5f6cc0ee987a')
+}
+
+.fi-us {
+    background-image: url('/flags/4x3/us.svg?_cchid=f715ad55665a1325981b6334e3d1aa90')
+}
+
+.fi-us.fis {
+    background-image: url('/flags/1x1/us.svg?_cchid=f49574423736ac2638603a5ea0d2a661')
+}
+
+.fi-uy {
+    background-image: url('/flags/4x3/uy.svg?_cchid=a4931745a01469ef5a3ef89343a211ee')
+}
+
+.fi-uy.fis {
+    background-image: url('/flags/1x1/uy.svg?_cchid=b0ab5d4c355a7c89940157bea59baf3f')
+}
+
+.fi-uz {
+    background-image: url('/flags/4x3/uz.svg?_cchid=7c1bc5a1f5aee60e57380f3db156a060')
+}
+
+.fi-uz.fis {
+    background-image: url('/flags/1x1/uz.svg?_cchid=a7acab2c1f5395893704084a2e062e0a')
+}
+
+.fi-va {
+    background-image: url('/flags/4x3/va.svg?_cchid=e06e2790c52620f7ef00239f3dbc2e70')
+}
+
+.fi-va.fis {
+    background-image: url('/flags/1x1/va.svg?_cchid=0b05f974fd49651e6471c73e2db845c5')
+}
+
+.fi-vc {
+    background-image: url('/flags/4x3/vc.svg?_cchid=0d135a5aaa2be532208f06d7ba9f7b08')
+}
+
+.fi-vc.fis {
+    background-image: url('/flags/1x1/vc.svg?_cchid=604bb3c44ede062b803c4a32e6608ca5')
+}
+
+.fi-ve {
+    background-image: url('/flags/4x3/ve.svg?_cchid=d358f3427b172795014e958354ad7dc4')
+}
+
+.fi-ve.fis {
+    background-image: url('/flags/1x1/ve.svg?_cchid=1f85fe92a61d6261002be73dcecf887a')
+}
+
+.fi-vg {
+    background-image: url('/flags/4x3/vg.svg?_cchid=b1c5905335f081d7e537a1b8db1088aa')
+}
+
+.fi-vg.fis {
+    background-image: url('/flags/1x1/vg.svg?_cchid=7f3d9e1966bbcb4aa46cc61b9ff1e7e2')
+}
+
+.fi-vi {
+    background-image: url('/flags/4x3/vi.svg?_cchid=8a74e2f6f1a5072c3cc722abcf18fb04')
+}
+
+.fi-vi.fis {
+    background-image: url('/flags/1x1/vi.svg?_cchid=200395867a006c93ab3f4d8f9b857b0c')
+}
+
+.fi-vn {
+    background-image: url('/flags/4x3/vn.svg?_cchid=84ca2cbe4f50ce88b9ef245de1b85361')
+}
+
+.fi-vn.fis {
+    background-image: url('/flags/1x1/vn.svg?_cchid=bf827dbb99c4a98b9ddd45d8c391f1f3')
+}
+
+.fi-vu {
+    background-image: url('/flags/4x3/vu.svg?_cchid=b002238b3ee68b349c5d0dc7e4bc11de')
+}
+
+.fi-vu.fis {
+    background-image: url('/flags/1x1/vu.svg?_cchid=5048da13f3bb8c47a233a74ab02a06f4')
+}
+
+.fi-wf {
+    background-image: url('/flags/4x3/wf.svg?_cchid=1359039ac6468ef0d4bcdb6ca17a44a6')
+}
+
+.fi-wf.fis {
+    background-image: url('/flags/1x1/wf.svg?_cchid=53ca53f99d8f63d43f4e785b2fee0032')
+}
+
+.fi-ws {
+    background-image: url('/flags/4x3/ws.svg?_cchid=096fc50015e936e5ef310183baab82ca')
+}
+
+.fi-ws.fis {
+    background-image: url('/flags/1x1/ws.svg?_cchid=9dcd85be09f67d107265077e58629892')
+}
+
+.fi-ye {
+    background-image: url('/flags/4x3/ye.svg?_cchid=d4cc9017b9793281c667ca3d305534ed')
+}
+
+.fi-ye.fis {
+    background-image: url('/flags/1x1/ye.svg?_cchid=c7f96a73720a46764697d8ec9fcd8b37')
+}
+
+.fi-yt {
+    background-image: url('/flags/4x3/yt.svg?_cchid=1359039ac6468ef0d4bcdb6ca17a44a6')
+}
+
+.fi-yt.fis {
+    background-image: url('/flags/1x1/yt.svg?_cchid=d3d7e77215f627a6c9bed65d56e8a73c')
+}
+
+.fi-za {
+    background-image: url('/flags/4x3/za.svg?_cchid=0f05edd20e9989a57e9c3a57ab51673c')
+}
+
+.fi-za.fis {
+    background-image: url('/flags/1x1/za.svg?_cchid=99f64c0ae175bf0bb1add566a0ae5fe2')
+}
+
+.fi-zm {
+    background-image: url('/flags/4x3/zm.svg?_cchid=c7ae1fe5074c360603a7b9bbfcdbc33d')
+}
+
+.fi-zm.fis {
+    background-image: url('/flags/1x1/zm.svg?_cchid=3a33f36ec77d296895e5b81cde58f386')
+}
+
+.fi-zw {
+    background-image: url('/flags/4x3/zw.svg?_cchid=fdf31fa40dfd6be8a178fd03639e72e9')
+}
+
+.fi-zw.fis {
+    background-image: url('/flags/1x1/zw.svg?_cchid=ac8365c8904a382062ae9b528958b9af')
+}
+
+.fi-ac {
+    background-image: url('/flags/4x3/ac.svg?_cchid=8ab65b7168da5d0907ece0c811ba27d8')
+}
+
+.fi-ac.fis {
+    background-image: url('/flags/1x1/ac.svg?_cchid=42139f7cc8f09d90c8e43c4cca1923a7')
+}
+
+.fi-cefta {
+    background-image: url('/flags/4x3/cefta.svg?_cchid=54b2dd1262076b3b784d43e543fa9e82')
+}
+
+.fi-cefta.fis {
+    background-image: url('/flags/1x1/cefta.svg?_cchid=a85cc9d015c480964d4f80db48d9f624')
+}
+
+.fi-cp {
+    background-image: url('/flags/4x3/cp.svg?_cchid=5f03d4b2930f96cda5d13452fab7589f')
+}
+
+.fi-cp.fis {
+    background-image: url('/flags/1x1/cp.svg?_cchid=5dbee55574f591055ac79e46d78864ef')
+}
+
+.fi-dg {
+    background-image: url('/flags/4x3/dg.svg?_cchid=99935dab9227a57f88c2602f6db91ffb')
+}
+
+.fi-dg.fis {
+    background-image: url('/flags/1x1/dg.svg?_cchid=72f5da723fc805492a799987b224badf')
+}
+
+.fi-ea {
+    background-image: url('/flags/4x3/ea.svg?_cchid=a4525b4f78f41ec588eaa17fea35de4d')
+}
+
+.fi-ea.fis {
+    background-image: url('/flags/1x1/ea.svg?_cchid=2923777bf064e77b39a18fa2a4cd3ed6')
+}
+
+.fi-es-ct {
+    background-image: url('/flags/4x3/es-ct.svg?_cchid=3eb3a35a978070fd4a68db545c527b54')
+}
+
+.fi-es-ct.fis {
+    background-image: url('/flags/1x1/es-ct.svg?_cchid=e5d7fd1b2ee438320338f0866cfef135')
+}
+
+.fi-es-ga {
+    background-image: url('/flags/4x3/es-ga.svg?_cchid=186685299735a4fd2ac07d20479336a6')
+}
+
+.fi-es-ga.fis {
+    background-image: url('/flags/1x1/es-ga.svg?_cchid=e80a14487ff008bf15cbc5636fb31ad5')
+}
+
+.fi-es-pv {
+    background-image: url('/flags/4x3/es-pv.svg?_cchid=fffb36aa668f918657f90fcb50821ad1')
+}
+
+.fi-es-pv.fis {
+    background-image: url('/flags/1x1/es-pv.svg?_cchid=dbefdebe576f92579404a4ad0067f35a')
+}
+
+.fi-eu {
+    background-image: url('/flags/4x3/eu.svg?_cchid=510ca6da0d406bf2e66dce7733deff41')
+}
+
+.fi-eu.fis {
+    background-image: url('/flags/1x1/eu.svg?_cchid=ab50940ee94db5e6ec0db1701262a5a2')
+}
+
+.fi-gb-eng {
+    background-image: url('/flags/4x3/gb-eng.svg?_cchid=7caecb785400d1cca7b319887a9d81bf')
+}
+
+.fi-gb-eng.fis {
+    background-image: url('/flags/1x1/gb-eng.svg?_cchid=a877951862ba77ad974775646c0b22be')
+}
+
+.fi-gb-nir {
+    background-image: url('/flags/4x3/gb-nir.svg?_cchid=4bcdeacbaadb89951a2cf091276e6bd9')
+}
+
+.fi-gb-nir.fis {
+    background-image: url('/flags/1x1/gb-nir.svg?_cchid=ef8d6ec9a4ea5a559f20bd4b4f5ff0e5')
+}
+
+.fi-gb-sct {
+    background-image: url('/flags/4x3/gb-sct.svg?_cchid=ade55ed456211d6577b2f80c06e40c51')
+}
+
+.fi-gb-sct.fis {
+    background-image: url('/flags/1x1/gb-sct.svg?_cchid=9506ab939d483c630b7db236ce744665')
+}
+
+.fi-gb-wls {
+    background-image: url('/flags/4x3/gb-wls.svg?_cchid=9490411928d3db5cad64a17d7c2c9f8b')
+}
+
+.fi-gb-wls.fis {
+    background-image: url('/flags/1x1/gb-wls.svg?_cchid=c488ecae68ddf5574c36b7e5782f6954')
+}
+
+.fi-ic {
+    background-image: url('/flags/4x3/ic.svg?_cchid=bdc9877c5d42dfa5adcfb488fcbf153c')
+}
+
+.fi-ic.fis {
+    background-image: url('/flags/1x1/ic.svg?_cchid=dc0d5bfce4986880c5066d29c0f83a2f')
+}
+
+.fi-ta {
+    background-image: url('/flags/4x3/ta.svg?_cchid=cd7f394fecf83213ed4c64d8a28e3af5')
+}
+
+.fi-ta.fis {
+    background-image: url('/flags/1x1/ta.svg?_cchid=3b962f855659dbe313642b98836f2edd')
+}
+
+.fi-un {
+    background-image: url('/flags/4x3/un.svg?_cchid=5232b1ea60a370c46c7e3cae2d8bd00e')
+}
+
+.fi-un.fis {
+    background-image: url('/flags/1x1/un.svg?_cchid=19f1d0dff60aad9004ae476c88477ed8')
+}
+
+.fi-xk {
+    background-image: url('/flags/4x3/xk.svg?_cchid=6f10dceb91bda301d4d8a33a4542ff83')
+}
+
+.fi-xk.fis {
+    background-image: url('/flags/1x1/xk.svg?_cchid=5a56e688e58ec91ced3945673dcbb447')
+}
+
+:root {
+    --phoneWidth: (max-width: 684px);
+    --tabletWidth: (max-width: 900px)
+}
+
+@font-face {
+    font-family: inter;
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+    src: url('/fonts/Inter-Regular.woff2')format("woff2"),url('/fonts/Inter-Regular.woff')format("woff")
+}
+
+@font-face {
+    font-family: inter;
+    font-style: italic;
+    font-display: swap;
+    font-weight: 400;
+    src: url('/fonts/Inter-Italic.woff2')format("woff2"),url('/fonts/Inter-Italic.woff')format("woff")
+}
+
+@font-face {
+    font-family: inter;
+    font-style: normal;
+    font-display: swap;
+    font-weight: 600;
+    src: url('/fonts/Inter-Medium.woff2')format("woff2"),url('/fonts/Inter-Medium.woff')format("woff")
+}
+
+@font-face {
+    font-family: inter;
+    font-style: italic;
+    font-display: swap;
+    font-weight: 600;
+    src: url('/fonts/Inter-MediumItalic.woff2')format("woff2"),url('/fonts/Inter-MediumItalic.woff')format("woff")
+}
+
+@font-face {
+    font-family: inter;
+    font-style: normal;
+    font-display: swap;
+    font-weight: 800;
+    src: url('/fonts/Inter-Bold.woff2')format("woff2"),url('/fonts/Inter-Bold.woff')format("woff")
+}
+
+@font-face {
+    font-family: inter;
+    font-style: italic;
+    font-display: swap;
+    font-weight: 800;
+    src: url('/fonts/Inter-BoldItalic.woff2')format("woff2"),url('/fonts/Inter-BoldItalic.woff')format("woff")
+}
+
+.button-container {
+    display: table;
+    margin-left: auto;
+    margin-right: auto
+}
+
+button,.button,a.button,.pill-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 18px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 500;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    appearance: none;
+    cursor: pointer;
+    outline: none;
+    background: #fafafa
+}
+
+@media(prefers-color-scheme: dark) {
+    button,.button,a.button,.pill-button {
+        background:#1b1c1d;
+        color: inherit
+    }
+}
+
+@media(prefers-color-scheme: light) {
+    button,.button,a.button,.pill-button {
+        background:#fafafa
+    }
+}
+
+[data-theme=dark] button,[data-theme=dark] .button,[data-theme=dark] a.button,[data-theme=dark] .pill-button {
+    background: #1b1c1d;
+    color: inherit
+}
+
+[data-theme=light] button,[data-theme=light] .button,[data-theme=light] a.button,[data-theme=light] .pill-button {
+    background: #fafafa
+}
+
+button.outline,.button.outline,a.button.outline,.pill-button.outline {
+    background: 0 0;
+    box-shadow: none;
+    padding: 8px 18px;
+    border-color: #eaeaea
+}
+
+@media(prefers-color-scheme: dark) {
+    button.outline,.button.outline,a.button.outline,.pill-button.outline {
+        border-color:#3b3d42;
+        color: inherit
+    }
+}
+
+@media(prefers-color-scheme: light) {
+    button.outline,.button.outline,a.button.outline,.pill-button.outline {
+        border-color:#eaeaea
+    }
+}
+
+[data-theme=dark] button.outline,[data-theme=dark] .button.outline,[data-theme=dark] a.button.outline,[data-theme=dark] .pill-button.outline {
+    border-color: #3b3d42;
+    color: inherit
+}
+
+[data-theme=light] button.outline,[data-theme=light] .button.outline,[data-theme=light] a.button.outline,[data-theme=light] .pill-button.outline {
+    border-color: #eaeaea
+}
+
+button.outline :hover,.button.outline :hover,a.button.outline :hover,.pill-button.outline :hover {
+    transform: none;
+    box-shadow: none
+}
+
+button.primary,.button.primary,a.button.primary,.pill-button.primary {
+    box-shadow: 0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,8%)
+}
+
+button.primary:hover,.button.primary:hover,a.button.primary:hover,.pill-button.primary:hover {
+    box-shadow: 0 2px 6px rgba(50,50,93,.21),0 1px 3px rgba(0,0,0,8%)
+}
+
+button.link,.button.link,a.button.link,.pill-button.link {
+    background: 0 0;
+    font-size: 1rem
+}
+
+button.small,.button.small,a.button.small,.pill-button.small {
+    font-size: .8rem
+}
+
+button.wide,.button.wide,a.button.wide,.pill-button.wide {
+    min-width: 200px;
+    padding: 14px 24px
+}
+
+.pill-button {
+    border: 2px solid;
+    height: 48px;
+    border-radius: 24px;
+    margin: 4px;
+    font-weight: 700;
+    display: inline-flex;
+    vertical-align: middle;
+    transition: background-color .3s ease,transform .2s ease;
+    background: #fff;
+    border-color: #222
+}
+
+@media(prefers-color-scheme: dark) {
+    .pill-button {
+        background:#232425;
+        border-color: #a9a9b3;
+        color: inherit
+    }
+}
+
+@media(prefers-color-scheme: light) {
+    .pill-button {
+        background:#fff;
+        border-color: #222
+    }
+}
+
+[data-theme=dark] .pill-button {
+    background: #232425;
+    border-color: #a9a9b3;
+    color: inherit
+}
+
+[data-theme=light] .pill-button {
+    background: #fff;
+    border-color: #222
+}
+
+.pill-button svg {
+    margin-right: 10px;
+    height: 24px
+}
+
+.pill-button:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,.2);
+    background: #222;
+    color: #fff
+}
+
+@media(prefers-color-scheme: dark) {
+    .pill-button:hover {
+        background:#a9a9b3;
+        color: #232425
+    }
+}
+
+@media(prefers-color-scheme: light) {
+    .pill-button:hover {
+        background:#222;
+        color: #fff
+    }
+}
+
+[data-theme=dark] .pill-button:hover {
+    background: #a9a9b3;
+    color: #232425
+}
+
+[data-theme=light] .pill-button:hover {
+    background: #222;
+    color: #fff
+}
+
+.pill-button:active {
+    transform: scale(.95)
+}
+
+p:has(>.pill-button):not(:has(>:not(.pill-button))) {
+    display: flex;
+    justify-content: center
+}
+
+.code-toolbar {
+    margin-bottom: 20px
+}
+
+.code-toolbar .toolbar-item a {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 8px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    appearance: none;
+    cursor: pointer;
+    outline: none;
+    background: #eaeaea
+}
+
+@media(prefers-color-scheme: dark) {
+    .code-toolbar .toolbar-item a {
+        background:#3b3d42;
+        color: inherit
+    }
+}
+
+@media(prefers-color-scheme: light) {
+    .code-toolbar .toolbar-item a {
+        background:#eaeaea
+    }
+}
+
+[data-theme=dark] .code-toolbar .toolbar-item a {
+    background: #3b3d42;
+    color: inherit
+}
+
+[data-theme=light] .code-toolbar .toolbar-item a {
+    background: #eaeaea
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 20px;
+    background: #fafafa
+}
+
+@media(prefers-color-scheme: dark) {
+    .header {
+        background:#1b1c1d
+    }
+}
+
+@media(prefers-color-scheme: light) {
+    .header {
+        background:#fafafa
+    }
+}
+
+[data-theme=dark] .header {
+    background: #1b1c1d
+}
+
+[data-theme=light] .header {
+    background: #fafafa
+}
+
+.header__right {
+    display: flex;
+    flex-direction: row;
+    align-items: center
+}
+
+@media(max-width: 684px) {
+    .header__right {
+        flex-direction:row-reverse
+    }
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 760px;
+    max-width: 100%
+}
+
+.theme-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    cursor: pointer
+}
+
+.theme-toggler {
+    fill: currentColor
+}
+
+.not-selectable {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 700;
+    font-display: auto;
+    font-family: monospace,monospace
+}
+
+.logo img {
+    height: 44px
+}
+
+.logo__mark {
+    margin-right: 5px
+}
+
+.logo__text {
+    font-size: 1.125rem;
+    white-space: nowrap
+}
+
+.logo__cursor {
+    display: inline-block;
+    width: 10px;
+    height: 1rem;
+    background: #fe5186;
+    margin-left: 5px;
+    border-radius: 1px;
+    animation: cursor 1s infinite
+}
+
+@media(prefers-reduced-motion:reduce) {
+    .logo__cursor {
+        animation: none
+    }
+}
+
+@keyframes cursor {
+    0% {
+        opacity: 0
+    }
+
+    50% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+.menu {
+    z-index: 9999;
+    background: #fafafa
+}
+
+@media(prefers-color-scheme: dark) {
+    .menu {
+        background:#1b1c1d
+    }
+}
+
+@media(prefers-color-scheme: light) {
+    .menu {
+        background:#fafafa
+    }
+}
+
+[data-theme=dark] .menu {
+    background: #1b1c1d
+}
+
+[data-theme=light] .menu {
+    background: #fafafa
+}
+
+@media(max-width: 684px) {
+    .menu {
+        position:absolute;
+        top: 50px;
+        right: 0;
+        border: none;
+        margin: 0;
+        padding: 10px
+    }
+}
+
+.menu__inner {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    font-size: 1rem;
+    list-style: none
+}
+
+.menu__inner li {
+    margin: 0 12px
+}
+
+@media(max-width: 684px) {
+    .menu__inner {
+        flex-direction:column;
+        align-items: flex-start;
+        padding: 0
+    }
+
+    .menu__inner li {
+        margin: 0;
+        padding: 5px
+    }
+}
+
+.menu-trigger {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+    margin-left: 10px;
+    cursor: pointer;
+    display: none
+}
+
+@media(max-width: 684px) {
+    .menu-trigger {
+        display:block
+    }
+}
+
+.menu a {
+    display: inline-block;
+    margin-right: 15px;
+    text-decoration: none
+}
+
+.menu a:hover {
+    text-decoration: underline
+}
+
+.menu a:last-of-type {
+    margin-right: 0
+}
+
+.submenu {
+    background: #fafafa
+}
+
+@media(prefers-color-scheme: dark) {
+    .submenu {
+        background:#1b1c1d
+    }
+}
+
+@media(prefers-color-scheme: light) {
+    .submenu {
+        background:#fafafa
+    }
+}
+
+[data-theme=dark] .submenu {
+    background: #1b1c1d
+}
+
+[data-theme=light] .submenu {
+    background: #fafafa
+}
+
+.submenu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden
+}
+
+.submenu li a,.submenu .dropbtn {
+    display: inline-block;
+    text-decoration: none
+}
+
+.submenu li.dropdown {
+    display: inline-block
+}
+
+.submenu .dropdown-content {
+    display: none;
+    position: absolute;
+    background: #1b1c1d
+}
+
+@media(prefers-color-scheme: light) {
+    .submenu .dropdown-content {
+        background:#fafafa
+    }
+}
+
+[data-theme=dark] .submenu .dropdown-content {
+    background: #1b1c1d
+}
+
+[data-theme=light] .submenu .dropdown-content {
+    background: #fafafa
+}
+
+.submenu .dropdown-content a {
+    padding: 12px 20px;
+    text-decoration: none;
+    display: block;
+    text-align: left
+}
+
+.submenu .dropdown-content a:hover {
+    background: #1b1c1d
+}
+
+@media(prefers-color-scheme: light) {
+    .submenu .dropdown-content a:hover {
+        background:#fafafa
+    }
+}
+
+[data-theme=dark] .submenu .dropdown-content a:hover {
+    background: #1b1c1d
+}
+
+[data-theme=light] .submenu .dropdown-content a:hover {
+    background: #fafafa
+}
+
+.submenu .dropdown:hover .dropdown-content {
+    display: block
+}
+
+html {
+    box-sizing: border-box;
+    line-height: 1.6;
+    letter-spacing: .06em;
+    scroll-behavior: smooth
+}
+
+*,*:before,*:after {
+    box-sizing: inherit
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Inter,-apple-system,BlinkMacSystemFont,roboto,segoe ui,Helvetica,Arial,sans-serif;
+    font-display: auto;
+    font-size: 1rem;
+    line-height: 1.54;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    font-feature-settings: "liga","tnum","case","calt","zero","ss01","locl";
+    -webkit-overflow-scrolling: touch;
+    -webkit-text-size-adjust: 100%;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: #fff;
+    color: #222
+}
+
+@media(max-width: 684px) {
+    body {
+        font-size:1rem
+    }
+}
+
+@media(prefers-color-scheme: dark) {
+    body {
+        background-color:#232425;
+        color: #a9a9b3
+    }
+}
+
+@media(prefers-color-scheme: light) {
+    body {
+        background-color:#fff;
+        color: #222
+    }
+}
+
+[data-theme=dark] body {
+    background-color: #232425;
+    color: #a9a9b3
+}
+
+[data-theme=light] body {
+    background-color: #fff;
+    color: #222
+}
+
+h2,h3,h4,h5,h6 {
+    align-items: center;
+    line-height: 1.3
+}
+
+h1 {
+    font-size: 2.625rem
+}
+
+h2 {
+    font-size: 1.625rem
+}
+
+h3 {
+    font-size: 1.375rem
+}
+
+h4 {
+    font-size: 1.125rem
+}
+
+@media(max-width: 684px) {
+    h1 {
+        font-size:2rem
+    }
+
+    h2 {
+        font-size: 1.4rem
+    }
+
+    h3 {
+        font-size: 1.15rem
+    }
+
+    h4 {
+        font-size: 1.125rem
+    }
+}
+
+a {
+    color: inherit
+}
+
+img {
+    display: block;
+    max-width: 100%
+}
+
+img.left {
+    margin-right: auto
+}
+
+img.center {
+    margin-left: auto;
+    margin-right: auto
+}
+
+img.right {
+    margin-left: auto
+}
+
+img.profile {
+    max-width: 25%;
+    margin: auto
+}
+
+img.circle {
+    border-radius: 50%;
+    max-width: 25%;
+    margin: auto
+}
+
+figure {
+    display: table;
+    max-width: 100%;
+    margin: 25px 0
+}
+
+figure.left {
+    margin-right: auto
+}
+
+figure.left-floated {
+    margin-right: auto;
+    float: left
+}
+
+figure.left-floated img {
+    margin: 20px 20px 20px 0
+}
+
+figure.center {
+    margin-left: auto;
+    margin-right: auto
+}
+
+figure.right {
+    margin-left: auto
+}
+
+figure.right-floated {
+    margin-left: auto;
+    float: right
+}
+
+figure.right-floated img {
+    margin: 20px 0 20px 20px
+}
+
+figure.rounded img {
+    border-radius: 50%
+}
+
+figure figcaption {
+    font-size: 14px;
+    margin-top: 5px;
+    opacity: .8
+}
+
+figure figcaption.left {
+    text-align: left
+}
+
+figure figcaption.center {
+    text-align: center
+}
+
+figure figcaption.right {
+    text-align: right
+}
+
+em,i,strong {
+    color: #000
+}
+
+@media(prefers-color-scheme: dark) {
+    em,i,strong {
+        color:#fff
+    }
+}
+
+@media(prefers-color-scheme: light) {
+    em,i,strong {
+        color:#000
+    }
+}
+
+[data-theme=dark] em,[data-theme=dark] i,[data-theme=dark] strong {
+    color: #fff
+}
+
+[data-theme=light] em,[data-theme=light] i,[data-theme=light] strong {
+    color: #000
+}
+
+code {
+    font-family: Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+    font-display: auto;
+    font-feature-settings: normal;
+    padding: 1px 6px;
+    margin: 0 2px;
+    border-radius: 5px;
+    font-size: .95rem;
+    background: #eaeaea
+}
+
+@media(prefers-color-scheme: dark) {
+    code {
+        background:#3b3d42
+    }
+}
+
+@media(prefers-color-scheme: light) {
+    code {
+        background:#eaeaea
+    }
+}
+
+[data-theme=dark] code {
+    background: #3b3d42
+}
+
+[data-theme=light] code {
+    background: #eaeaea
+}
+
+pre {
+    padding: 10px 10px 10px 20px;
+    border-radius: 8px;
+    font-size: .95rem;
+    overflow: auto
+}
+
+[data-theme=dark] pre {
+    background-color: #3b3d42
+}
+
+[data-theme=light] pre {
+    background-color: #eaeaea
+}
+
+@media(max-width: 684px) {
+    pre {
+        white-space:pre-wrap;
+        word-wrap: break-word
+    }
+}
+
+pre code {
+    background: 0 0!important;
+    margin: 0;
+    padding: 0;
+    font-size: inherit;
+    color: #ccc
+}
+
+@media(prefers-color-scheme: dark) {
+    pre code {
+        color:inherit
+    }
+}
+
+@media(prefers-color-scheme: light) {
+    pre code {
+        color:#ccc
+    }
+}
+
+[data-theme=dark] pre code {
+    color: inherit
+}
+
+[data-theme=light] pre code {
+    color: #ccc
+}
+
+blockquote {
+    border-left: 3px solid #3eb0ef;
+    margin: 40px;
+    padding: 10px 20px
+}
+
+@media(max-width: 684px) {
+    blockquote {
+        margin:10px;
+        padding: 10px
+    }
+}
+
+blockquote:before {
+    content: "”";
+    font-family: Georgia,serif;
+    font-display: auto;
+    font-size: 3.875rem;
+    position: absolute;
+    left: -40px;
+    top: -20px
+}
+
+blockquote p:first-of-type {
+    margin-top: 0
+}
+
+blockquote p:last-of-type {
+    margin-bottom: 0
+}
+
+ul,ol {
+    margin-left: 40px;
+    padding: 0
+}
+
+@media(max-width: 684px) {
+    ul,ol {
+        margin-left:20px
+    }
+}
+
+ol ol {
+    list-style-type: lower-alpha
+}
+
+.container {
+    flex: 1 auto;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center
+}
+
+.content {
+    flex-direction: column;
+    flex: 1 auto;
+    align-items: center;
+    justify-content: center;
+    margin: 0
+}
+
+@media(max-width: 684px) {
+    .content {
+        margin-top:0
+    }
+}
+
+hr {
+    width: 100%;
+    border: none;
+    height: 1px;
+    background: #dcdcdc
+}
+
+@media(prefers-color-scheme: dark) {
+    hr {
+        background:#4e4e57
+    }
+}
+
+@media(prefers-color-scheme: light) {
+    hr {
+        background:#dcdcdc
+    }
+}
+
+[data-theme=dark] hr {
+    background: #4e4e57
+}
+
+[data-theme=light] hr {
+    background: #dcdcdc
+}
+
+.hidden {
+    display: none
+}
+
+@media(max-width: 684px) {
+    .hide-on-phone {
+        display:none
+    }
+}
+
+@media(max-width: 900px) {
+    .hide-on-tablet {
+        display:none
+    }
+}
+
+.screen-reader-text {
+    border: 0;
+    clip: rect(1px,1px,1px,1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute!important;
+    width: 1px;
+    word-wrap: normal!important
+}
+
+.screen-reader-text:focus {
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0,0,0,.6);
+    clip: auto!important;
+    clip-path: none;
+    color: #21759b;
+    display: block;
+    font-size: 14px;
+    font-size: .875rem;
+    font-weight: 700;
+    height: auto;
+    width: auto;
+    top: 5px;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    z-index: 100000
+}
+
+.background-image {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50%
+}
+
+.highlight {
+    margin: 30px auto
+}
+
+.posts {
+    width: 100%;
+    max-width: 800px;
+    text-align: left;
+    padding: 20px;
+    margin: 20px auto
+}
+
+@media(max-width: 900px) {
+    .posts {
+        max-width:660px
+    }
+}
+
+.posts:not(:last-of-type) {
+    border-bottom: 1px solid #dcdcdc
+}
+
+@media(prefers-color-scheme: dark) {
+    .posts:not(:last-of-type) {
+        border-bottom:1px solid #4e4e57
+    }
+}
+
+@media(prefers-color-scheme: light) {
+    .posts:not(:last-of-type) {
+        border-bottom:1px solid #dcdcdc
+    }
+}
+
+[data-theme=dark] .posts:not(:last-of-type) {
+    border-bottom: 1px solid #4e4e57
+}
+
+[data-theme=light] .posts:not(:last-of-type) {
+    border-bottom: 1px solid #dcdcdc
+}
+
+.posts-group {
+    display: flex;
+    margin-bottom: 1.9em;
+    line-height: normal
+}
+
+@media(max-width: 900px) {
+    .posts-group {
+        display:block
+    }
+}
+
+.posts-list {
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+.posts .post-title {
+    font-size: 1rem;
+    margin: 5px 0
+}
+
+.posts .post-year {
+    padding-top: 6px;
+    margin-right: 1.8em;
+    font-size: 1.6em;
+    opacity: .6
+}
+
+@media(max-width: 900px) {
+    .posts .post-year {
+        margin:-6px 0 4px
+    }
+}
+
+.posts .post-item {
+    border-bottom: 1px grey dashed
+}
+
+.posts .post-item-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 12px 0;
+    text-decoration: none
+}
+
+.posts .post-day {
+    flex-shrink: 0;
+    margin-left: 1em;
+    opacity: .6
+}
+
+.post {
+    width: 100%;
+    max-width: 800px;
+    text-align: left;
+    padding: 20px;
+    margin: 20px auto
+}
+
+@media(max-width: 900px) {
+    .post {
+        max-width:600px
+    }
+}
+
+.post-date:after {
+    content: '—'
+}
+
+.post-title {
+    font-size: 2.625rem;
+    margin: 0 0 20px
+}
+
+@media(max-width: 684px) {
+    .post-title {
+        font-size:2rem
+    }
+}
+
+.post-title a {
+    text-decoration: none
+}
+
+.post-tags {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    opacity: .5
+}
+
+.post-tags a {
+    text-decoration: none
+}
+
+.post-content {
+    margin-top: 30px
+}
+
+.post-cover {
+    border-radius: 8px;
+    margin: 40px -50px;
+    width: 860px;
+    max-width: 860px;
+    overflow: hidden
+}
+
+@media(max-width: 900px) {
+    .post-cover {
+        margin:20px 0;
+        width: 100%
+    }
+}
+
+.post-excerpt {
+    color: grey;
+    font-style: italic
+}
+
+.post-info {
+    margin-top: 30px;
+    font-size: .8rem;
+    line-height: normal;
+    opacity: .6
+}
+
+.post-info p {
+    margin: .8em 0
+}
+
+.post-info a:hover {
+    border-bottom: 1px solid #fff
+}
+
+.post-info svg {
+    margin-right: .8em
+}
+
+.post-info .tag {
+    margin-right: .5em
+}
+
+.post-info .tag::before {
+    content: "#"
+}
+
+.post-info .feather {
+    display: inline-block;
+    vertical-align: -.125em;
+    width: 1em;
+    height: 1em
+}
+
+.post-audio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px
+}
+
+.post-audio audio {
+    width: 90%
+}
+
+.post .flag {
+    border-radius: 50%;
+    margin: 0 5px
+}
+
+.pagination {
+    margin-top: 20px
+}
+
+.pagination__title {
+    display: flex;
+    text-align: center;
+    position: relative;
+    margin: 20px 0
+}
+
+.pagination__title-h {
+    text-align: center;
+    margin: 0 auto;
+    padding: 5px 10px;
+    font-size: .8rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: .1em;
+    z-index: 1;
+    background: #fff;
+    color: #999
+}
+
+@media(prefers-color-scheme: dark) {
+    .pagination__title-h {
+        background:#232425;
+        color: #b3b3bd
+    }
+}
+
+@media(prefers-color-scheme: light) {
+    .pagination__title-h {
+        background:#fff;
+        color: #999
+    }
+}
+
+[data-theme=dark] .pagination__title-h {
+    background: #232425;
+    color: #b3b3bd
+}
+
+[data-theme=light] .pagination__title-h {
+    background: #fff;
+    color: #999
+}
+
+.pagination__title hr {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin-top: 15px;
+    z-index: 0
+}
+
+.pagination__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.pagination__buttons a {
+    text-decoration: none;
+    font-weight: 700
+}
+
+.button {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    max-width: 40%;
+    padding: 0;
+    cursor: pointer;
+    appearance: none;
+    background: #eaeaea
+}
+
+@media(prefers-color-scheme: dark) {
+    .button {
+        background:#3b3d42
+    }
+}
+
+@media(prefers-color-scheme: light) {
+    .button {
+        background:#eaeaea
+    }
+}
+
+[data-theme=dark] .button {
+    background: #3b3d42
+}
+
+[data-theme=light] .button {
+    background: #eaeaea
+}
+
+.button+.button {
+    margin-left: 10px
+}
+
+.button a {
+    display: flex;
+    padding: 8px 16px;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden
+}
+
+.button__text {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden
+}
+
+.button.next .button__icon {
+    margin-left: 8px
+}
+
+.button.previous .button__icon {
+    margin-right: 8px
+}
+
+.footer {
+    padding: 40px 20px;
+    flex-grow: 0;
+    color: #999
+}
+
+.footer__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 760px;
+    max-width: 100%
+}
+
+@media(max-width: 900px) {
+    .footer__inner {
+        flex-direction:column
+    }
+}
+
+.footer__social-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 20px;
+    font-size: 1rem;
+    color: #999
+}
+
+@media(max-width: 900px) {
+    .footer__social-icons {
+        flex-direction:column;
+        margin-top: 10px
+    }
+}
+
+.footer__content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1rem;
+    color: #999
+}
+
+@media(max-width: 900px) {
+    .footer__content {
+        flex-direction:column;
+        margin-top: 10px
+    }
+}
+
+.footer__content>*:not(:last-child)::after {
+    content: "•";
+    padding: 0 5px
+}
+
+@media(max-width: 900px) {
+    .footer__content>*:not(:last-child)::after {
+        content:"";
+        padding: 0
+    }
+}
+
+.footer__content>*:last-child {
+    padding: 0 0
+}
+
+@media(max-width: 900px) {
+    .footer__content>*:last-child {
+        padding:0
+    }
+}
+
+.sharing-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+
+.sharing-buttons .resp-sharing-button__icon,.sharing-buttons .resp-sharing-button__link {
+    display: inline-block
+}
+
+.sharing-buttons .resp-sharing-button__link {
+    text-decoration: none;
+    margin: .5em
+}
+
+.sharing-buttons .resp-sharing-button {
+    border-radius: 5px;
+    transition: 25ms ease-out;
+    padding: .5em .75em;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif
+}
+
+.sharing-buttons .resp-sharing-button__icon svg {
+    width: 1em;
+    height: 1em;
+    margin-right: .4em;
+    vertical-align: top
+}
+
+.sharing-buttons .resp-sharing-button--small svg {
+    margin: 0;
+    vertical-align: middle
+}
+
+.post-content table {
+    border-collapse: collapse;
+    margin: 25px auto;
+    font-size: .9em;
+    min-width: 400px;
+    max-width: 100%
+}
+
+.post-content table th,.post-content table td {
+    padding: 12px 15px;
+    border: 1px solid #dcdcdc
+}
+
+@media(prefers-color-scheme: dark) {
+    .post-content table th,.post-content table td {
+        border:1px solid #4e4e57
+    }
+}
+
+@media(prefers-color-scheme: light) {
+    .post-content table th,.post-content table td {
+        border:1px solid #dcdcdc
+    }
+}
+
+[data-theme=dark] .post-content table th,[data-theme=dark] .post-content table td {
+    border: 1px solid #4e4e57
+}
+
+[data-theme=light] .post-content table th,[data-theme=light] .post-content table td {
+    border: 1px solid #dcdcdc
+}
+
+.post-content table thead tr {
+    text-align: left;
+    background-color: #dcdcdc;
+    color: #222
+}
+
+@media(prefers-color-scheme: dark) {
+    .post-content table thead tr {
+        background-color:#4e4e57;
+        color: #a9a9b3
+    }
+}
+
+@media(prefers-color-scheme: light) {
+    .post-content table thead tr {
+        background-color:#dcdcdc;
+        color: #222
+    }
+}
+
+[data-theme=dark] .post-content table thead tr {
+    background-color: #4e4e57;
+    color: #a9a9b3
+}
+
+[data-theme=light] .post-content table thead tr {
+    background-color: #dcdcdc;
+    color: #222
+}
+
+.post-content table tbody tr {
+    border: 1px solid #dcdcdc
+}
+
+@media(prefers-color-scheme: dark) {
+    .post-content table tbody tr {
+        border:1px solid #4e4e57
+    }
+}
+
+@media(prefers-color-scheme: light) {
+    .post-content table tbody tr {
+        border:1px solid #dcdcdc
+    }
+}
+
+[data-theme=dark] .post-content table tbody tr {
+    border: 1px solid #4e4e57
+}
+
+[data-theme=light] .post-content table tbody tr {
+    border: 1px solid #dcdcdc
+}
+
+.btn-404 svg {
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 5px
+}
+
+.btn-404 a {
+    margin: 0 10px
+}
