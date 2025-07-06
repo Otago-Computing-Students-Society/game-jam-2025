@@ -1,0 +1,272 @@
+:root {
+    --color1: white;
+    --color2: rgb(67, 67, 67);
+
+    --bg-color1: var(--color1);
+    --bg-color2: var(--color2);
+
+    --text-color1: var(--color2);
+    --text-color2: var(--color1);
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.preload * {
+    animation-duration: 0s !important;
+    transition: background-color 0s, opacity 0s, color 0s, width 0s, height 0s, padding 0s, margin 0s !important;
+}
+
+#contents {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sub-container {
+    padding: 40px;
+    padding-bottom: 80px;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.central {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (min-width: 1000px) {
+    .central {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .central {
+        width: 90%;
+    }
+}
+
+.central h1 {
+    padding: 0;
+    margin: 0;
+}
+
+.centre {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.side-split {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+}
+
+.portrait {
+    border-radius: 1000px;
+    width: 75%;
+    margin: auto;
+    margin-right: 0;
+}
+
+.transcript {
+    margin: auto;
+    margin-right: 0;
+    width: 80%;
+}
+
+.sc1 {
+    background-color: var(--bg-color1);
+    color: var(--text-color1);
+}
+
+.sc2 {
+    background-color: var(--bg-color2);
+    color: var(--text-color2);
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+@media only screen and (min-width: 1000px) {
+
+    .project-container {
+        flex-direction: row;
+    }
+
+    .content-frame {
+        min-width: 60%;
+        max-width: 60%;
+        margin-left: 50px;
+        float: right;
+        position: relative;
+        margin-left: 50px;
+    }
+
+    .content-frame.left {
+        float: left;
+        margin-left: 0px;
+        margin-right: 50px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .project-container {
+        flex-direction: column;
+    }
+
+    .project-container-left {
+        flex-direction: column-reverse;
+    }
+
+    .content-frame {
+        width: 100%;
+    }
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 1.9em;
+    text-align: left;
+}
+
+p {
+    font-size: 1.3em;
+}
+
+.sc1 a {
+    color: var(--text-color1);
+}
+
+.sc2 a {
+    color: var(--text-color2);
+}
+
+.contents {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+
+canvas.contents {
+    position: absolute;
+    /* pointer-events: none; */
+}
+
+img.contents {
+    position: relative;
+    box-shadow: 0 3px 6px black;
+}
+
+iframe.contents {
+    position: absolute;
+    box-shadow: 0 3px 6px black;
+    border: none;
+}
+
+@media only screen and (min-width: 1000px) {
+    .overlay {
+        position: absolute;
+        left: 0;
+        top: 0;
+        min-width: 100%;
+        min-height: 100%;
+        backdrop-filter: blur(0px);
+        background: transparent;
+        background-size: contain;
+        transition: all .1s ease-in-out;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media only screen and (max-width: 1000px) {
+    .overlay {
+        display: none;
+    }
+
+    iframe.contents {
+        display: none;
+    }
+
+    .content-frame canvas.contents {
+        display: none;
+    }
+}
+
+.blur {
+    /* transform: scale(1.025);  */
+    backdrop-filter: blur(5px);
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.overlay-text {
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    animation: fade-in 0.3s ease-in-out;
+}
+
+.spinner {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+
+    animation: rotation 1s linear infinite, fade-in 0.3s ease-in-out;
+
+    border-left: 15px solid rgb(235, 235, 235);
+    border-right: 15px solid rgb(235, 235, 235);
+    border-bottom: 15px solid rgb(235, 235, 235);
+    border-top: 15px solid rgb(120, 120, 120);
+
+    border-radius: 100%;
+}
+
+@keyframes rotation {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.invisible {
+    opacity: 0;
+    animation: fade-out 0.15s ease-in-out;
+}
+
+
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fade-out {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}

@@ -1,9 +1,9 @@
 
 // The 'preload' class is used to stop animations from running on page load
-setTimeout(() => document.body.classList.remove('preload'), 500);
+setTimeout(() => document.body.classList.remove('preload'), 100);
 
 setupEmscriptenFrame(document.getElementById("submission-1"), '../submissions/s1', 'little-engine.js');
-// setupUnityFrame(document.getElementById("space-invaders-frame"), "space-invaders");
+setupUnityFrame(document.getElementById("submission-2"), "../submissions/s2");
 
 
 function setupUnityFrame(frame, folder, useUnityWebExtension = false) {
@@ -78,7 +78,6 @@ function instantiateEmscripten(frame, folder, file) {
 
     import(`./${folder}/${file}`).then(module => {
         var locateFile = (path, prefix) => {
-            console.log(prefix, path);
             return `./${folder}/${path}`;
         }
 
