@@ -2,9 +2,9 @@
 // The 'preload' class is used to stop animations from running on page load
 setTimeout(() => document.body.classList.remove('preload'), 100);
 
-setupEmscriptenFrame(document.getElementById("submission-1"), './submissions/s1', 'little-engine.js');
-setupUnityFrame(document.getElementById("submission-2"), "./submissions/s2");
-setupGodotFrame(document.getElementById("submission-3"), "./submissions/s3/godot.html");
+setupEmscriptenFrame(document.getElementById("submission-1"), './js/submissions/s1', 'little-engine.js');
+setupUnityFrame(document.getElementById("submission-2"), "./js/submissions/s2");
+setupGodotFrame(document.getElementById("submission-3"), "./js/submissions/s3/godot.html");
 
 
 function setupUnityFrame(frame, folder, useUnityWebExtension = false) {
@@ -25,7 +25,7 @@ function instantiateUnity(frame, folder, useUnityWebExtension) {
     var overlay = frame.querySelector(".overlay");
 
     var child = document.createElement('iframe');
-    child.src = "./frame-template.html";
+    child.src = "./../frame-template.html";
     child.classList.add("submission-contents");
     
     frame.appendChild(child);
@@ -67,7 +67,7 @@ function instantiateGodot(frame, htmlPageLoc) {
     };
 
     var script = document.createElement("script");
-    script.src = "js/godot-frame-cleanup.js";
+    script.src = "./godot-frame-cleanup.js";
     child.appendChild(script);
 }
 
