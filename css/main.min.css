@@ -2660,7 +2660,7 @@ div.code-toolbar>.toolbar a:hover,div.code-toolbar>.toolbar a:focus,div.code-too
     font-style: normal;
     font-display: swap;
     font-weight: 400;
-    src: url('/game-jam-2025/fonts/Inter-Regular.woff2')format("woff2"),url('/game-jam-2025/fonts/Inter-Regular.woff')format("woff")
+    src: url('fonts/Inter-Regular.woff2')format("woff2"),url('fonts/Inter-Regular.woff')format("woff")
 }
 
 @font-face {
@@ -2668,7 +2668,7 @@ div.code-toolbar>.toolbar a:hover,div.code-toolbar>.toolbar a:focus,div.code-too
     font-style: italic;
     font-display: swap;
     font-weight: 400;
-    src: url('/game-jam-2025/fonts/Inter-Italic.woff2')format("woff2"),url('/game-jam-2025/fonts/Inter-Italic.woff')format("woff")
+    src: url('fonts/Inter-Italic.woff2')format("woff2"),url('fonts/Inter-Italic.woff')format("woff")
 }
 
 @font-face {
@@ -2676,7 +2676,7 @@ div.code-toolbar>.toolbar a:hover,div.code-toolbar>.toolbar a:focus,div.code-too
     font-style: normal;
     font-display: swap;
     font-weight: 600;
-    src: url('/game-jam-2025/fonts/Inter-Medium.woff2')format("woff2"),url('/game-jam-2025/fonts/Inter-Medium.woff')format("woff")
+    src: url('fonts/Inter-Medium.woff2')format("woff2"),url('fonts/Inter-Medium.woff')format("woff")
 }
 
 @font-face {
@@ -2684,7 +2684,7 @@ div.code-toolbar>.toolbar a:hover,div.code-toolbar>.toolbar a:focus,div.code-too
     font-style: italic;
     font-display: swap;
     font-weight: 600;
-    src: url('/game-jam-2025/fonts/Inter-MediumItalic.woff2')format("woff2"),url('/game-jam-2025/fonts/Inter-MediumItalic.woff')format("woff")
+    src: url('fonts/Inter-MediumItalic.woff2')format("woff2"),url('fonts/Inter-MediumItalic.woff')format("woff")
 }
 
 @font-face {
@@ -2692,7 +2692,7 @@ div.code-toolbar>.toolbar a:hover,div.code-toolbar>.toolbar a:focus,div.code-too
     font-style: normal;
     font-display: swap;
     font-weight: 800;
-    src: url('/game-jam-2025/fonts/Inter-Bold.woff2')format("woff2"),url('/game-jam-2025/fonts/Inter-Bold.woff')format("woff")
+    src: url('fonts/Inter-Bold.woff2')format("woff2"),url('fonts/Inter-Bold.woff')format("woff")
 }
 
 @font-face {
@@ -2700,7 +2700,7 @@ div.code-toolbar>.toolbar a:hover,div.code-toolbar>.toolbar a:focus,div.code-too
     font-style: italic;
     font-display: swap;
     font-weight: 800;
-    src: url('/game-jam-2025/fonts/Inter-BoldItalic.woff2')format("woff2"),url('/game-jam-2025/fonts/Inter-BoldItalic.woff')format("woff")
+    src: url('fonts/Inter-BoldItalic.woff2')format("woff2"),url('fonts/Inter-BoldItalic.woff')format("woff")
 }
 
 .button-container {
